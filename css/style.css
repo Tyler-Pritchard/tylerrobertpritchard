@@ -63,7 +63,7 @@ html {
 
 body {
   box-sizing: border-box;
-  padding: 3rem; }
+  padding: 1rem; }
   @media only screen and (max-width: 56.25em) {
     body {
       padding: 0; } }
@@ -127,10 +127,12 @@ body {
       transform: skewY(2deg) skewX(15deg) scale(1.1);
       text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
   .heading-primary .heading-tertiary {
+    display: flex;
     font-size: 1.6rem;
     font-weight: 700;
     text-transform: uppercase; }
   .heading-primary .paragraph {
+    display: flex;
     font-size: 1.6rem; }
     .heading-primary .paragraph:not(:last-child) {
       margin-bottom: 3rem; }
@@ -613,26 +615,50 @@ body {
     opacity: 0;
     transform: translate(-50%, -50%) scale(0.25);
     transition: all .5s .2s; }
+    @media only screen and (max-width: 600px) {
+      .popup__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center; } }
   .popup__left {
     width: 33.333333%;
-    display: table-cell; }
+    display: table-cell;
+    float: left; }
+    @media only screen and (max-width: 600px) {
+      .popup__left {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center; } }
   .popup__right {
+    float: right;
     width: 66.666667%;
     display: table-cell;
     vertical-align: middle;
-    padding: 3rem 5rem; }
+    padding: 2rem 4rem; }
+    @media only screen and (max-width: 600px) {
+      .popup__right {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        margin: 2rem; } }
   .popup__img {
     display: block;
-    width: 100%; }
+    width: 80%;
+    border-radius: 50%;
+    box-shadow: .8rem .8rem .8rem 0 black;
+    margin: 2rem 0 0 2rem;
+    overflow: hidden; }
+    @media only screen and (max-width: 600px) {
+      .popup__img {
+        width: 15rem; } }
   .popup__text {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     margin-bottom: 4rem;
-    moz-column-count: 2;
-    moz-column-gap: 4rem;
-    moz-column-rule: 1px solid #eee;
-    column-count: 2;
-    column-gap: 4rem;
-    column-rule: 1px solid #eee;
+    text-indent: 1rem;
+    font-weight: 700;
     -moz-hyphens: auto;
     -ms-hyphens: auto;
     -webkit-hyphens: auto;
