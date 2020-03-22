@@ -19,20 +19,13 @@
     
     &__content {
         @include absCenter;
-        // background-color: #38cdf1;
-        background-image: linear-gradient(164deg, #1a73c0 0%, #020F21 100%);
+        background-color: #38cdf1;
+        background-image: linear-gradient(164deg, #1762a3 0%, rgb(42, 24, 66) 100%);
         width: 70%;
         height: 80%;
-        background-color: $color-grey-light-1;
-        grid-column: center-start / center-end; 
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
-        grid-gap: 4rem;
-        overflow: scroll;
-        opacity: 0;
+        overflow: auto;
         transform: translate(-50%, -50%) scale(.25);
         transition: all .5s .2s;
-        padding: 2rem 
         
         @media only screen and (max-width: 600px) {
             display: flex;
@@ -43,13 +36,30 @@
         }
     }
     
+    &__heading {
+        background-color: $color-grey-light-2;
+        color: black;
+        width: 100%;
+        position: sticky;
+        top: 0;
+        text-align: center;
+        z-index: 9999;
+    }
+
+    &__list {
+        grid-column: center-start / center-end; 
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
+        grid-gap: 4rem;
+        margin: 2rem 0 4rem 5rem;
+    }
     
     &__project {
         box-sizing: border-box;
-        border: 8px outset $color-primary-dark;
+        border: .9rem outset $color-primary-dark;
         width: 40rem;
         height: 50rem;
-        padding: 2rem;
+        padding: 1rem;
         margin: 1rem 0rem 0rem 1rem;
         box-shadow: 0 2rem 4rem rgba($color-black, .2);
         display: flex;
@@ -60,7 +70,6 @@
     }
 
     &__img {
-        border: 3px solid purple;
         width: 70%;
         box-shadow: .8rem .8rem .8rem 0 black;
         overflow: hidden;
@@ -73,8 +82,8 @@
     &__name {
         // justify-self: center;
         // align-self: end;
-        // z-index: 3;
-
+        z-index: 3;
+        border: .1rem solid black;
         width: 80%;
         font-size: 1.6rem;
         text-align: center;
@@ -82,23 +91,32 @@
         background-color: $color-secondary-dark;
         color: #fff;
         font-weight: 400;
-        // transform: translateY(50%);
+        box-shadow: .8rem .8rem .8rem 0 black;
+        margin-top: 1rem;
+
+        // transform: translateY(-10%);
+
+        &:hover {
+            transform: translate(0, -10%);
+            transition: all .2s;
+            cursor: pointer;
+        }
     }
 
     &__text {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 40%;
+        border: .2rem solid white;
+        background-color: $color-white;
+        color: $color-grey-dark-3;
         font-size: 1.6rem;
-        margin-bottom: 2rem;
         text-indent: 1rem;
         font-weight: 700;
-        background-color: $color-grey-light-2;
-
-        moz-column-count: 2;
-        moz-column-gap: 4rem;
-        moz-column-rule: 1px solid $color-grey-light-2;
-
-        column-count: 3;
-        column-gap: 4rem;
-        column-rule: 1px solid $color-grey-light-2;
+        padding: 1rem;
+        margin: 1rem 0;
+        overflow: auto;
 
         -moz-hyphens: auto;
         -ms-hyphens: auto;
@@ -120,7 +138,7 @@
         z-index: 9999;
         &:link,
         &:visited {
-            color: $color-grey-dark;
+            color: $color-grey-dark-3;
             position: absolute;
             top: 1.5rem;
             right: 1.5rem;
