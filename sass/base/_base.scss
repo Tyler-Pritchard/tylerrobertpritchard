@@ -23,11 +23,16 @@ html {
     @include respond(big-desktop) {
         font-size: 75%; //1rem = 12, 12/16
     }
+
+    @media only screen and (max-width: $bp-largest) {
+        font-size: 50%;
+    }
 }
 
 body {
     box-sizing: border-box;
     padding: 1rem;
+    background-color: black;
 
     @include respond(tab-port) {
         padding: 0;

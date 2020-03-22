@@ -1,0 +1,172 @@
+.projects {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba($color-black, .8);
+    z-index: 9999;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s;
+
+    @supports (-webkit-backdrop-filter: blur(10px)) or (backdrop-filter: blur(10px)) {
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+        background-color: rgba($color-black, .3);
+    }
+    
+    
+    &__content {
+        @include absCenter;
+        // background-color: #38cdf1;
+        background-image: linear-gradient(164deg, #1a73c0 0%, #020F21 100%);
+        width: 70%;
+        height: 80%;
+        background-color: $color-grey-light-1;
+        grid-column: center-start / center-end; 
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
+        grid-gap: 4rem;
+        overflow: scroll;
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(.25);
+        transition: all .5s .2s;
+        padding: 2rem 
+        
+        @media only screen and (max-width: 600px) {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            
+        }
+    }
+    
+    
+    &__project {
+        box-sizing: border-box;
+        border: 8px outset $color-primary-dark;
+        width: 40rem;
+        height: 50rem;
+        padding: 2rem;
+        margin: 1rem 0rem 0rem 1rem;
+        box-shadow: 0 2rem 4rem rgba($color-black, .2);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        text-align: center;
+    }
+
+    &__img {
+        border: 3px solid purple;
+        width: 70%;
+        box-shadow: .8rem .8rem .8rem 0 black;
+        overflow: hidden;
+        
+        @media only screen and (max-width: 600px) {
+            width: 15rem;
+        }
+    }
+
+    &__name {
+        // justify-self: center;
+        // align-self: end;
+        // z-index: 3;
+
+        width: 80%;
+        font-size: 1.6rem;
+        text-align: center;
+        padding: 1.25rem;
+        background-color: $color-secondary-dark;
+        color: #fff;
+        font-weight: 400;
+        // transform: translateY(50%);
+    }
+
+    &__text {
+        font-size: 1.6rem;
+        margin-bottom: 2rem;
+        text-indent: 1rem;
+        font-weight: 700;
+        background-color: $color-grey-light-2;
+
+        moz-column-count: 2;
+        moz-column-gap: 4rem;
+        moz-column-rule: 1px solid $color-grey-light-2;
+
+        column-count: 3;
+        column-gap: 4rem;
+        column-rule: 1px solid $color-grey-light-2;
+
+        -moz-hyphens: auto;
+        -ms-hyphens: auto;
+        -webkit-hyphens: auto;
+        hyphens: auto;
+    }
+
+    &:target {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    &:target &__content {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+    }
+
+    &__close {
+        z-index: 9999;
+        &:link,
+        &:visited {
+            color: $color-grey-dark;
+            position: absolute;
+            top: 1.5rem;
+            right: 1.5rem;
+            font-size: 3rem;
+            text-decoration: none;
+            display: inline-block;
+            transition: all .2s;
+            line-height: 1;
+        }
+
+        &:hover {
+            color: $color-primary;
+        }
+    } 
+    
+    
+    //double border animation
+    // ::selection {
+    //     background: #19f6e8;
+    //   }
+    //   &__svg-wrapper {
+    //     position: relative;
+    //     top: 50%;
+    //     transform: translateY(-50%);
+    //     margin: 0 auto;
+    //     width: 500px;
+    //   }
+    //   &__shape1,
+    //   &__shape2 {
+    //     stroke-dasharray: 1120;
+    //     stroke-width: 5px;
+    //     fill: transparent;
+    //     stroke: #19f6e8;
+    //     border-bottom: 5px solid black;
+    //     transition-timing-function: linear;
+    //     transition: stroke-dashoffset 4s, stroke-dasharray 4s;
+    //   }
+    //   &__shape1 {
+    //     stroke-dashoffset: 1120;
+    //   }
+    //   &__shape2 {
+    //     stroke-dashoffset: -1120;
+    //   }
+    //   &__svg-wrapper:hover .shape1,
+    //   &__svg-wrapper:hover .shape2 {
+    //     stroke-dashoffset: 0;
+    //     stroke-dasharray: 1120;
+    //   }
+}
