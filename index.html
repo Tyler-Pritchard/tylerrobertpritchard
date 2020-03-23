@@ -38,7 +38,7 @@
             <ul class="navigation__list">
 
 
-                <li class="navigation__item"><a href="#popup"
+                <li class="navigation__item"><a href="#about"
                         class="navigation__link"><span></span>About</a></li>
 
 
@@ -53,7 +53,7 @@
 
     <header class="header">
 
-        <div id="bg-video__light">
+        <div id="video__light" class="bg-video__light">
             <video class="bg-video__content--light" autoplay muted loop>
                 <source src="img/Up.mp4" type="video/mp4">
                 <source src="img/Up.webm" type="video/webm">
@@ -62,43 +62,50 @@
             </video>
         </div>
 
-        <!-- <div id="bg-video__dark">
+        <div id="video__dark" class="bg-video__dark">
             <video class="bg-video__content--dark" id="bg-video__dark" autoplay muted loop>
                 <source src="img/Star.mp4" type="video/mp4">
                 <source src="img/Star.webm" type="video/webm">
                 Your browser is not supported
             </video>
-        </div> -->
+        </div>
 
-        <div class="header__text-box">
+        <div class="header__text-box" class="bg-video__dark">
                 <spans class="heading-primary--main">
                     <h1 class="heading-primary">Tyler Pritchard</h1>
                 </span>
-                    <span class="heading-primary--sub">
-                    <h1 class="heading-primary--main"> Full Stack Web & Mobile w DevOps Experience
-                    </h1>    
-                    </span>
+                <span class="heading-primary--sub">
+                    <div class="heading-light" id="heading-light">
+                        <h1 class="heading-primary--main"> Engineer & Programmer
+                        </h1>
+                    </div>  
+                    <div class="heading-dark" id="heading-dark">
+                        <h1 class="heading-primary--main"> Artist & Musician
+                        </h1>
+                    </div>  
+                </span>
             </h1>
 
-            <!-- <button class="btn btn-theme btn--white btn--animated">Contact</button> -->
+            <button class="btn btn-theme-light btn--white btn--animated" id="btn-theme-light">By Day</button>
+            <button class="btn btn-theme-dark btn--white btn--animated" id="btn-theme-dark">By Night</button>
         </div>
     </header>
 
 
-    <div class="popup" id="popup">
-        <div class="popup__content">
-            <div class="popup__left">
-                <img src="img/bio_pic.jpg" alt="Tyler Pritchard" class="popup__img" />
+    <div class="about" id="about">
+        <div class="about__content">
+            <div class="about__left">
+                <img src="img/bio_pic.jpg" alt="Tyler Pritchard" class="about__img" />
             </div>
-            <div class="popup__right">
-                <a href="#" class="popup__close">&times;</a>
+            <div class="about__right">
+                <a href="#" class="about__close">&times;</a>
                 <h2 class="heading-secondary u-margin-bottom-small">
                 Tyler Pritchard
                 </h2>
                 <h3 class="heading-tertiary u-margin-bottom-small">
                 Taglines & Subheadings  &ndash; Still Coming Up with Something Catchy
                 </h3>
-                <blockquote class="popup__text">  
+                <blockquote class="about__text">  
                     <p>Tyler Pritchard is a Full-Stack Engineer building web and mobile applications, with experience in devops from teaching CI/CD tools to Fortune 500 companies across the United States.  Tyler has is on an infinite quest for knowledge acquisition and advancement.  There is always more to know, and there are always ways to improve if you are willing to both ask and listen.
                     </p>
                     <p>Tyler has most recently had the honor to train military veterans entering the civilian workforce in web development with Vets in Tech.  Prior to instructing Frontend development and devops, he completed a 6 month programming bootcamp in San Francisco, CA.  He has held such diverse occupations as a pretrial case anaylst, a touring musician, and a barista at Pixar Animation Studios.
