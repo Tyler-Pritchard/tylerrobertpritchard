@@ -20,7 +20,7 @@
     &__content {
         @include absCenter;
         background-color: #38cdf1;
-        background-image: linear-gradient(164deg, #1762a3 0%, rgb(42, 24, 66) 100%);
+        background-image: $color-gradient-light;
         width: 70%;
         height: 80%;
         overflow: auto;
