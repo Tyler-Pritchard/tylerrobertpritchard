@@ -1,4 +1,5 @@
-.projects {
+.music {
+    display: none;
     height: 100vh;
     width: 100%;
     position: fixed;
@@ -9,7 +10,6 @@
     opacity: 0;
     visibility: hidden;
     transition: all .3s;
-    visibility: initial;
 
     @supports (-webkit-backdrop-filter: blur(10px)) or (backdrop-filter: blur(10px)) {
         -webkit-backdrop-filter: blur(10px);
