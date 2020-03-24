@@ -19,9 +19,9 @@
     &__content {
         @include absCenter;
 
-        height: 80vh;
-        width: 80vh;
-        background-color: $color-white;
+        height: 90vh;
+        width: 90vh;
+        background-image: $color-gradient-dark;
         box-shadow: 0 2rem 4rem rgba($color-black, .2);
         border-radius: 3px;
         display: flex;
@@ -58,8 +58,8 @@
 
     &__video {
         display: block;
-        width: 75%;
-        border-radius: 10%;
+        width: 70%;
+        border-radius: 5%;
         box-shadow: .8rem .8rem .8rem 0 black;
         margin: 2rem 0 0 2rem;
         overflow: hidden;
@@ -74,10 +74,10 @@
     }
 
     &__text {
-        font-size: 1.6rem;
+        font-size: 1.9rem;
         margin-bottom: 4rem;
         text-indent: 1rem;
-        font-weight: 700;
+        font-weight: 500;
 
         // moz-column-count: 2;
         // moz-column-gap: 4rem;
@@ -122,4 +122,8 @@
             color: $color-primary;
         }
     }
+}
+
+.documentary__tag {
+    display: none;
 }

@@ -7,20 +7,40 @@ body {
 }
 
 .heading-primary {
-    color: $color-white;
     text-transform: uppercase;
-
     backface-visibility: hidden;
     margin: 4rem;
+    opacity: .7;
 
 
-    &--main {
+    &--main-light {
         display: block;
         font-size: 4rem;
         font-weight: 400;
         letter-spacing: 1.8rem;
+        color: $color-grey-light-1;
 
         animation-name: moveInLeft;
+        animation-duration: 1s;
+        animation-timing-function: ease-in;
+
+        @include respond(phone) {
+            letter-spacing: 1rem;
+            font-family: 5rem;
+        }
+
+        /* animation-iteration-count: 3; */
+        /* animation-delay: 3s; */
+    }
+
+    &--main-dark {
+        display: none;
+        font-size: 4rem;
+        font-weight: 400;
+        letter-spacing: 1.8rem;
+        color: $color-grey-dark-2;
+
+        animation-name: moveInRight;
         animation-duration: 1s;
         animation-timing-function: ease-out;
 
@@ -33,13 +53,28 @@ body {
         /* animation-delay: 3s; */
     }
 
-    &--sub {
+    &--sub-light {
+        display: block;
+        font-size: 4rem;
+        font-weight: 700;
+        margin: 4rem;
+        color: $color-black;
+
+    
+        animation: moveInRight 1s ease-out;
+
+        @include respond(phone) {
+            letter-spacing: 2rem;
+        }
+    }
+
+    &--sub-dark {
         display: block;
         font-size: 4rem;
         font-weight: 700;
         margin: 4rem;
     
-        animation: moveInRight 1s ease-out;
+        animation: moveInLeft 1s ease-out;
 
         @include respond(phone) {
             letter-spacing: 2rem;

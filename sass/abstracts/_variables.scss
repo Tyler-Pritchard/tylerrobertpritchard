@@ -12,12 +12,16 @@ $color-tertiary-dark: #5643fa;
 $color-grey-light-1: #f7f7f7;
 $color-grey-light-2: #eee;
 
-$color-grey-dark: #777;
+$color-grey-dark: rgb(194, 192, 192);
 $color-grey-dark-2: #999;
 $color-grey-dark-3: rgb(19, 18, 18);
 
 $color-white: #fff;
 $color-black: #000;
+
+$color-gradient-light: linear-gradient(164deg, #84c4fcad 0%, rgba(47, 74, 230, 0.616) 100%);
+
+$color-gradient-dark: linear-gradient(164deg, $color-black 0%, #002c52, rgba(69, 27, 78, 0.678) 100%);
 
 //FONTS
 $default-font-size: 1.6rem;
