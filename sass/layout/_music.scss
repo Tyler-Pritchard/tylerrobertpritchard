@@ -157,38 +157,8 @@
             color: $color-primary;
         }
     } 
-    
-    
-    //double border animation
-    // ::selection {
-    //     background: #19f6e8;
-    //   }
-    //   &__svg-wrapper {
-    //     position: relative;
-    //     top: 50%;
-    //     transform: translateY(-50%);
-    //     margin: 0 auto;
-    //     width: 500px;
-    //   }
-    //   &__shape1,
-    //   &__shape2 {
-    //     stroke-dasharray: 1120;
-    //     stroke-width: 5px;
-    //     fill: transparent;
-    //     stroke: #19f6e8;
-    //     border-bottom: 5px solid black;
-    //     transition-timing-function: linear;
-    //     transition: stroke-dashoffset 4s, stroke-dasharray 4s;
-    //   }
-    //   &__shape1 {
-    //     stroke-dashoffset: 1120;
-    //   }
-    //   &__shape2 {
-    //     stroke-dashoffset: -1120;
-    //   }
-    //   &__svg-wrapper:hover .shape1,
-    //   &__svg-wrapper:hover .shape2 {
-    //     stroke-dashoffset: 0;
-    //     stroke-dasharray: 1120;
-    //   }
+}
+
+.music__tag {
+    display: none;
 }
