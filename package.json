@@ -25,6 +25,7 @@
   "homepage": "https://github.com/Tyler-Pritchard/tylerrobertpritchard#readme",
   "dependencies": {
     "autoprefixer": "^9.7.4",
+    "html-minifier": "^4.0.0",
     "sass": "^1.26.3"
   },
   "devDependencies": {
