@@ -18,7 +18,11 @@
     <script src="/script.js" defer></script>
 
 
-    <title>Tyler Pritchard | Full Stack Developer</title>
+    <link rel="canonical" href="https://www.tylerrobertpritchard.com/" />
+    <title>Tyler R. Pritchard | Oakland, California</title>
+    <meta name='title' content='Tyler R. Pritchard | Oakland, California'>
+    <meta name='description' content='Official website of Tyler Pritchard ( Tyler Robert Pritchard ), full-stack web & mobile developer, devops engineer, multi-instrumentalist musician & vocalist, sound engineer and documentarian'>
+
 </head>
 
 <body>
@@ -38,12 +42,17 @@
             <ul class="navigation__list">
 
 
-                <li class="navigation__item"><a href="#about"
+                <li class="navigation__item" id="nav-about"><a href="#about"
                         class="navigation__link"><span></span>About</a></li>
 
 
-                <li class="navigation__item"><a href="#projects"
-                        class="navigation__link"><span></span>Past Projects</a></li>
+                <li class="navigation__item" id="nav-projects"><a href="#projects"
+                        class="navigation__link"><span></span>Past Projects</a>
+                    </li>
+
+                <li class="navigation__item" id="nav-artist"><a href="#artist-bio"
+                    class="navigation__link"><span></span>Arist Bio</a>
+                </li>
 
                 <!-- <li class="navigation__item"><a href="https://www.linkedin.com/in/tyler-pritchard/"
                         class="navigation__link"><span></span>Contact</a></li> -->
@@ -76,12 +85,12 @@
                 </span>
                 <span class="heading-primary--sub">
                     <div class="heading-light" id="heading-light">
-                        <h1 class="heading-primary--main"> Engineer & Programmer
-                        </h1>
+                        <h2 class="heading-primary--main"> Engineer & Programmer
+                        </h2>
                     </div>  
                     <div class="heading-dark" id="heading-dark">
-                        <h1 class="heading-primary--main"> Artist & Musician
-                        </h1>
+                        <h2 class="heading-primary--main"> Artist & Musician
+                        </h2>
                     </div>  
                 </span>
             </h1>
@@ -95,7 +104,7 @@
     <div class="about" id="about">
         <div class="about__content">
             <div class="about__left">
-                <img src="img/bio_pic.jpg" alt="Tyler Pritchard" class="about__img" />
+                <img src="img/bio_pic.jpg" title="About Bio Pic" alt="Tyler Pritchard" class="about__img" />
             </div>
             <div class="about__right">
                 <a href="#" class="about__close">&times;</a>
@@ -106,7 +115,7 @@
                 Taglines & Subheadings  &ndash; Still Coming Up with Something Catchy
                 </h3>
                 <blockquote class="about__text">  
-                    <p>Tyler Pritchard is a Full-Stack Engineer building web and mobile applications, with experience in devops from teaching CI/CD tools to Fortune 500 companies across the United States.  Tyler has is on an infinite quest for knowledge acquisition and advancement.  There is always more to know, and there are always ways to improve if you are willing to both ask and listen.
+                    <p>Tyler Pritchard is a Full-Stack Engineer building web and mobile applications, with experience in devops from teaching CI/CD tools to Fortune 500 companies across the United States.  Tyler is on a personal quest to perpetually acquire more knowledge and improve upon any skill, be it new or preexisting.  There is always more to know and there are always ways to be better if you are willing to both listen and ask.
                     </p>
                     <p>Tyler has most recently had the honor to train military veterans entering the civilian workforce in web development with Vets in Tech.  Prior to instructing Frontend development and devops, he completed a 6 month programming bootcamp in San Francisco, CA.  He has held such diverse occupations as a pretrial case anaylst, a touring musician, and a barista at Pixar Animation Studios.
                     </p>
@@ -118,6 +127,32 @@
         </div>
     </div>
 
+    <div class="artist-bio" id="artist-bio">
+        <div class="artist-bio__content">
+            <div class="artist-bio__left">
+                <img src="img/profile-awesome.jpg" title="artist-bio Bio Pic" alt="Tyler Pritchard" class="artist-bio__img" />
+            </div>
+            <div class="artist-bio__right">
+                <a href="#" class="artist-bio__close">&times;</a>
+                <h2 class="heading-secondary u-margin-bottom-small">
+                Tyler Pritchard
+                </h2>
+                <h3 class="heading-tertiary u-margin-bottom-small">
+                "A 'muse' isn't some mythic inspiration... Any time you make something for someone because you think they'll like it... THAT's the muse.'  <br> &ndash;  Torbin from Pixar
+                </h3>
+                <blockquote class="artist-bio__text">  
+                    <p>Tyler Pritchard is a musician and documentarian based out of Oakland, California.  Tyler has performed for live audiences on vocals, mandolin, guitar, keyboards, drums, harmonica, washboard, and as an electronic DJ. After performing in several bands and running a recording studio in Tucson, AZ, Tyler moved to the Bay Area to found the folk/bluegrass group Ghost Town Gospel, where during his tenure he produced and recorded one album and several demos while leading the group to exponentially increase audience size and revenue over each preceding tour.
+                    </p>
+                    <p>Tyler was a key figure in the West Oakland artist live-work warehouse endearingly named "The Deathtrap" from 2012 until its eventual shutdown in 2017.  During that time he was heavily involved in organizing the community to improve diversity and inclusion, physical safety, and event planning.
+                    </p>
+                    <p>Tyler shot and retains the principal footage for a documentary centered around the Deathtrap's fight for survival against the City of Oakland and the landlords who had been profiting by illegally renting out the warehouse.
+                    </p>
+                </blockquote>
+                <a href="https://www.facebook.com/tylerrobertpritchard" class="btn btn--green">Facebook Profile</a>
+            </div>
+        </div>
+    </div>
+
     <div class="projects" id="projects">
         <!-- <div class="projects__svg-wrapper">
         <svg height="60" width="500" xmlns="http://www.w3.org/2000/svg">
@@ -125,14 +160,14 @@
             <rect class="shape2" height="60" width="500" /> -->
             <div class="projects__content">
                 <div class="projects__heading heading-tertiary">
-                    <h1>Current and Past Projects</h1>
+                    <h2>Current and Past Projects</h2>
                     <a href="#" class="projects__close">&times;</a>
                 </div>
                 <div class="projects__list">
 
 
                 <div class="projects__project">
-                    <img src="img/cafe.jpg" alt="Cafe" class="projects__img">
+                    <img src="img/cafe.jpg" title="Cafe Ordering App" alt="Cafe" class="projects__img">
                     <a href="https://gather-cafe-frontend.herokuapp.com/homepage" alt="Cafe App">
                         <h2 class="projects__name">Cafe Ordering App</h2>
                     </a>
@@ -142,7 +177,7 @@
                 </div>
 
                 <div class="projects__project">
-                    <img src="img/TREAD-icon.jpg" alt="TREAD" class="projects__img">
+                    <img src="img/TREAD-icon.jpg" title="TREAD" alt="TREAD" class="projects__img">
                     <a href="https://testflight.apple.com/join/kZI2rLpO" alt="Cafe App">
                         <h2 class="projects__name">TREAD: Mobile Safety App</h2>
                     </a>
@@ -152,7 +187,7 @@
                 </div>
 
                 <div class="projects__project">
-                    <img src="/img/cafe-backend.jpg" alt="Cafe" class="projects__img">
+                    <img src="/img/cafe-backend.jpg" title="Cafe Backend" alt="Cafe" class="projects__img">
                     <a href="https://github.com/Tyler-Pritchard/Gather-backend" alt="Cafe Git Repo">
                         <h2 class="projects__name">Cafe Backend - Python</h2>
                     </a>
@@ -161,7 +196,7 @@
                 </div>
 
                 <div class="projects__project">
-                    <img src="/img/BI_Realestate.jpg" alt="Bad Idea Realty" class="projects__img">
+                    <img src="/img/BI_Realestate.jpg" alt="Bad Idea Realty" title="Bad Idea Realty" class="projects__img">
                     <a href="https://tyler-pritchard.github.io/BadIdeaRealty/" alt="Bad Idea Realty">
                         <h2 class="projects__name">Bad Idea Realty</h2>
                     </a>
@@ -170,7 +205,7 @@
                 </div>
 
                 <div class="projects__project" >
-                    <img src="/img/Bad-Idea-Camping.jpg" alt="Bad Idea Camping" class="projects__img">
+                    <img src="/img/Bad-Idea-Camping.jpg" title="Bad Idea Camping" alt="Bad Idea Camping" class="projects__img">
                     <a href="https://bad-idea-camping.herokuapp.com/home" alt="Bad Idea Camping"></a>
                     <h2 class="projects__name">Bad Idea Camping</h2>
                     <p class="projects__text">
@@ -179,7 +214,7 @@
                 </div>
 
                 <div class="projects__project" >
-                    <img src="/img/git-chef-jenkins.jpg" alt="Git Chef Jenkins" class="projects__img">
+                    <img src="/img/git-chef-jenkins.jpg" title="Git Chef Jenkins" alt="Git Chef Jenkins" class="projects__img">
                     <a href="https://github.com/Tyler-Pritchard/git-chef-jenkins" alt="Git Chef Jenkins"></a>
                     <h2 class="projects__name">Git Chef Jenkins</h2>
                     <p class="projects__text">
@@ -188,7 +223,7 @@
                 </div>
 
                 <div class="projects__project" >
-                    <img src="/img/bad-idea-booking.jpg" alt="Gather Cafe" class="projects__img">
+                    <img src="/img/bad-idea-booking.jpg" title="Bad Idea Booking" alt="Bad Idea Booking" class="projects__img">
                     <a href="https://bad-idea-camping.herokuapp.com/home" alt="Bad Idea Travel"></a>
                     <h2 class="projects__name">Bad Idea Travel Booking</h2>
                     <p class="projects__text">
