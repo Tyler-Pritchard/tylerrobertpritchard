@@ -4,6 +4,7 @@ body {
     font-size: 1.6rem;
     line-height: 1.5;
     color: $color-grey-dark;
+
 }
 
 .heading-primary {
@@ -11,26 +12,27 @@ body {
     backface-visibility: hidden;
     margin: 4rem;
     opacity: .7;
-
-
+    
+    
     &--main-light {
         display: block;
         font-size: 4rem;
         font-weight: 400;
         letter-spacing: 1.8rem;
         color: $color-grey-light-1;
-
+        
         animation-name: moveInLeft;
         animation-duration: 1s;
         animation-timing-function: ease-in;
-
+        
         @include respond(phone) {
             letter-spacing: 1rem;
             font-family: 5rem;
         }
-
-        /* animation-iteration-count: 3; */
-        /* animation-delay: 3s; */
+        
+        @media only screen and (max-width: $bp-large) {
+            font-size: $larger-font-size;
+        }
     }
 
     &--main-dark {
@@ -49,8 +51,9 @@ body {
             font-family: 5rem;
         }
 
-        /* animation-iteration-count: 3; */
-        /* animation-delay: 3s; */
+        @media only screen and (max-width: $bp-large) {
+            font-size: $larger-font-size;
+        }
     }
 
     &--sub-light {
@@ -66,6 +69,10 @@ body {
         @include respond(phone) {
             letter-spacing: 2rem;
         }
+
+        @media only screen and (max-width: $bp-large) {
+            font-size: $larger-font-size;
+        }
     }
 
     &--sub-dark {
@@ -79,8 +86,13 @@ body {
         @include respond(phone) {
             letter-spacing: 2rem;
         }
+
+        @media only screen and (max-width: $bp-large) {
+            font-size: $larger-font-size;
+        }
     }
 }
+
 .heading-secondary {
     font-size: 3.5rem;
     text-transform: uppercase;

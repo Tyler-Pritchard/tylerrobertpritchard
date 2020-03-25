@@ -5,12 +5,12 @@
     &:visited {
         text-transform: uppercase;
         text-decoration: none;
-        padding: 1.5rem 4rem;
+        padding: 2rem 5rem;
         display: inline-block;
         border-radius: 10rem;
         transition: all 0.2s;
         position: relative;
-        font-size: $default-font-size;
+        font-size: $large-font-size;
 
         border: none;
         cursor: pointer;
@@ -40,6 +40,10 @@
         &::after {
             background-color: $color-white;
         }
+
+        @media only screen and (max-width: $bp-large) {
+            height: 15rem;
+        }
     }
 
     &--dark {
@@ -48,6 +52,10 @@
 
         &::after {
             background-color: $color-secondary-light;
+        }
+
+        @media only screen and (max-width: $bp-large) {
+            height: 15rem;
         }
     }
 
@@ -115,10 +123,12 @@
 }
 
 .btn-theme-light {
+    width: 30%;
     margin: 2rem;
     display: initial;
     color: $color-black;
     opacity: .8;
+    font-size: $large-font-size;
 }
 
 .btn-theme-dark {

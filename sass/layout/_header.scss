@@ -37,10 +37,11 @@
         transform: translate(-50%, -50%);
         text-align: center;
 
-        @media only screen and (max-width: 1024px) {
+        @media only screen and (max-width: $bp-large) {
             display: flex;
             flex-direction: column;
             justify-content: baseline;
+            align-items: center;
             height: 70vh;
             width: 70vw;
             margin-top: 10rem;

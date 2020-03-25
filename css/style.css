@@ -67,7 +67,8 @@ html {
 body {
   box-sizing: border-box;
   padding: 1rem;
-  background-color: black; }
+  background-color: black;
+  overflow: hidden; }
   @media only screen and (max-width: 56.25em) {
     body {
       padding: 0; } }
@@ -96,13 +97,14 @@ body {
     color: #f7f7f7;
     animation-name: moveInLeft;
     animation-duration: 1s;
-    animation-timing-function: ease-in;
-    /* animation-iteration-count: 3; */
-    /* animation-delay: 3s; */ }
+    animation-timing-function: ease-in; }
     @media only screen and (max-width: 37.5em) {
       .heading-primary--main-light {
         letter-spacing: 1rem;
         font-family: 5rem; } }
+    @media only screen and (max-width: 62.5em) {
+      .heading-primary--main-light {
+        font-size: 6.4rem; } }
   .heading-primary--main-dark {
     display: none;
     font-size: 4rem;
@@ -111,13 +113,14 @@ body {
     color: #999;
     animation-name: moveInRight;
     animation-duration: 1s;
-    animation-timing-function: ease-out;
-    /* animation-iteration-count: 3; */
-    /* animation-delay: 3s; */ }
+    animation-timing-function: ease-out; }
     @media only screen and (max-width: 37.5em) {
       .heading-primary--main-dark {
         letter-spacing: 1rem;
         font-family: 5rem; } }
+    @media only screen and (max-width: 62.5em) {
+      .heading-primary--main-dark {
+        font-size: 6.4rem; } }
   .heading-primary--sub-light {
     display: block;
     font-size: 4rem;
@@ -128,6 +131,9 @@ body {
     @media only screen and (max-width: 37.5em) {
       .heading-primary--sub-light {
         letter-spacing: 2rem; } }
+    @media only screen and (max-width: 62.5em) {
+      .heading-primary--sub-light {
+        font-size: 6.4rem; } }
   .heading-primary--sub-dark {
     display: block;
     font-size: 4rem;
@@ -137,6 +143,9 @@ body {
     @media only screen and (max-width: 37.5em) {
       .heading-primary--sub-dark {
         letter-spacing: 2rem; } }
+    @media only screen and (max-width: 62.5em) {
+      .heading-primary--sub-dark {
+        font-size: 6.4rem; } }
 
 .heading-secondary {
   font-size: 3.5rem;
@@ -221,12 +230,12 @@ body {
 .btn, .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
-  padding: 1.5rem 4rem;
+  padding: 2rem 5rem;
   display: inline-block;
   border-radius: 10rem;
   transition: all 0.2s;
   position: relative;
-  font-size: 1.6rem;
+  font-size: 3.2rem;
   border: none;
   cursor: pointer; }
 
@@ -247,12 +256,18 @@ body {
   color: #c2c0c0; }
   .btn--light::after {
     background-color: #fff; }
+  @media only screen and (max-width: 62.5em) {
+    .btn--light {
+      height: 15rem; } }
 
 .btn--dark {
   background-color: #580563;
   color: #fff; }
   .btn--dark::after {
     background-color: plum; }
+  @media only screen and (max-width: 62.5em) {
+    .btn--dark {
+      height: 15rem; } }
 
 .btn--regular {
   background-color: #fff;
@@ -302,10 +317,12 @@ body {
   transform: translateY(0); }
 
 .btn-theme-light {
+  width: 30%;
   margin: 2rem;
   display: initial;
   color: #000;
-  opacity: .8; }
+  opacity: .8;
+  font-size: 3.2rem; }
 
 .btn-theme-dark {
   display: none;
@@ -457,11 +474,12 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center; }
-    @media only screen and (max-width: 1024px) {
+    @media only screen and (max-width: 62.5em) {
       .header__text-box {
         display: flex;
         flex-direction: column;
         justify-content: baseline;
+        align-items: center;
         height: 70vh;
         width: 70vw;
         margin-top: 10rem; } }
@@ -494,6 +512,12 @@ body {
     .navigation__button {
       top: 3rem;
       right: 3rem; } }
+  @media only screen and (max-width: 62.5em) {
+    .navigation__button {
+      height: 14rem;
+      width: 14rem;
+      top: 10rem;
+      right: 10rem; } }
 
 .navigation__background {
   height: 6rem;
@@ -513,6 +537,12 @@ body {
     .navigation__background {
       top: 3.5rem;
       right: 3.5rem; } }
+  @media only screen and (max-width: 62.5em) {
+    .navigation__background {
+      height: 12rem;
+      width: 12rem;
+      top: 11rem;
+      right: 11rem; } }
 
 .navigation__nav {
   height: 100vh;
@@ -571,6 +601,10 @@ body {
     height: 2px;
     background-color: #131212;
     display: inline-block; }
+    @media only screen and (max-width: 62.5em) {
+      .navigation__icon, .navigation__icon::before, .navigation__icon::after {
+        width: 6rem;
+        height: .5rem; } }
   .navigation__icon::before, .navigation__icon::after {
     content: "";
     position: absolute;
@@ -578,8 +612,17 @@ body {
     transition: all .2s; }
   .navigation__icon::before {
     top: -.8rem; }
+    @media only screen and (max-width: 62.5em) {
+      .navigation__icon::before {
+        top: -1.6rem; } }
   .navigation__icon::after {
     top: .8rem; }
+    @media only screen and (max-width: 62.5em) {
+      .navigation__icon::after {
+        top: 1.6rem; } }
+  @media only screen and (max-width: 62.5em) {
+    .navigation__icon {
+      margin-top: 7rem; } }
 
 .navigation__button:hover .navigation__icon::before {
   top: -1rem; }

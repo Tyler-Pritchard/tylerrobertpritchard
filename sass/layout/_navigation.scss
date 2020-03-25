@@ -1,4 +1,5 @@
 .navigation {
+
   &__checkbox {
     display: none;
   }
@@ -25,6 +26,13 @@
       top: 3rem;
       right: 3rem;
     }
+
+    @media only screen and (max-width: $bp-large) {
+      height: 14rem;
+      width: 14rem;
+      top: 10rem;
+      right: 10rem;
+    }
   }
 
   &__background {
@@ -47,6 +55,13 @@
     @include respond(phone) {
       top: 3.5rem;
       right: 3.5rem;
+    }
+
+    @media only screen and (max-width: $bp-large) {
+      height: 12rem;
+      width: 12rem;
+      top: 11rem;
+      right: 11rem;
     }
   }
 
@@ -128,6 +143,10 @@
       height: 2px;
       background-color: $color-grey-dark-3;
       display: inline-block;
+      @media only screen and (max-width: $bp-large) {
+        width: 6rem;
+        height: .5rem;
+      }
     }
 
     &::before,
@@ -140,12 +159,21 @@
 
     &::before {
       top: -.8rem;
+      @media only screen and (max-width: $bp-large) {
+        top: -1.6rem;
+      }
     }
 
     &::after {
       top: .8rem;
+      @media only screen and (max-width: $bp-large) {
+        top: 1.6rem;
+      }
     }
 
+    @media only screen and (max-width: $bp-large) {
+      margin-top: 7rem;
+    }
   }
 
   &__button:hover &__icon::before {
@@ -169,5 +197,4 @@
     transform: rotate(-135deg);
     top: 0;
   }
-
 }
