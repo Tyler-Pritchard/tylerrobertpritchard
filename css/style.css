@@ -164,14 +164,20 @@ body {
     .heading-secondary {
       font-size: 2.5rem; } }
   .heading-secondary:hover {
-    transform: skewY(2deg) skewX(15deg) scale(1.1);
+    transform: scale(1.1);
     text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
+  @media only screen and (max-width: 62.5em) {
+    .heading-secondary {
+      font-size: 6.4rem; } }
 
 .heading-tertiary {
   display: flex;
   font-size: 1.6rem;
-  font-weight: 700;
+  font-weight: 500;
   text-transform: uppercase; }
+  @media only screen and (max-width: 62.5em) {
+    .heading-tertiary {
+      font-size: 2.5rem; } }
 
 .paragraph {
   display: flex;
@@ -274,6 +280,10 @@ body {
   color: #000; }
   .btn--regular::after {
     background-color: #c2c0c0; }
+  @media only screen and (max-width: 62.5em) {
+    .btn--regular {
+      width: 40%;
+      text-align: center; } }
 
 .btn--youtube {
   background-color: #580563;
@@ -902,8 +912,9 @@ body {
     opacity: 0;
     transform: translate(-50%, -50%) scale(0.25);
     transition: all .5s .2s; }
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 62.5em) {
       .artist-bio__content {
+        height: 90vh;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -912,44 +923,48 @@ body {
     width: 33.333333%;
     display: table-cell;
     float: left; }
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 62.5em) {
       .artist-bio__left {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        align-items: center; } }
+        width: 50%; } }
   .artist-bio__right {
     float: right;
     width: 66.666667%;
     display: table-cell;
     vertical-align: middle;
     padding: 2rem 4rem; }
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 62.5em) {
       .artist-bio__right {
+        width: 80%;
+        height: 70%;
         display: flex;
         flex-direction: column;
-        width: 100%;
+        justify-content: space-between;
         align-items: center;
-        margin: 2rem; } }
+        overflow-y: scroll;
+        margin-bottom: 4rem; } }
   .artist-bio__img {
     display: block;
-    width: 80%;
+    width: 90%;
     border-radius: 50%;
     box-shadow: .8rem .8rem .8rem 0 black;
     margin: 2rem 0 0 2rem;
     overflow: hidden; }
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 62.5em) {
       .artist-bio__img {
-        width: 15rem; } }
+        margin-top: 4rem;
+        margin-bottom: 4rem; } }
   .artist-bio__text {
     font-size: 1.6rem;
     margin-bottom: 4rem;
     text-indent: 1rem;
-    font-weight: 700;
+    font-weight: 500;
     -moz-hyphens: auto;
     -ms-hyphens: auto;
     -webkit-hyphens: auto;
     hyphens: auto; }
+    @media only screen and (max-width: 62.5em) {
+      .artist-bio__text {
+        font-size: 3.2rem; } }
   .artist-bio:target {
     opacity: 1;
     visibility: visible; }
@@ -966,6 +981,11 @@ body {
     display: inline-block;
     transition: all .2s;
     line-height: 1; }
+    @media only screen and (max-width: 62.5em) {
+      .artist-bio__close:link, .artist-bio__close:visited {
+        top: 5rem;
+        right: 5rem;
+        font-size: 6rem; } }
   .artist-bio__close:hover {
     color: blue; }
 

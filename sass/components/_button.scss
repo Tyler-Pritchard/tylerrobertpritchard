@@ -66,6 +66,11 @@
         &::after {
             background-color: $color-grey-dark;
         }
+
+        @media only screen and (max-width: $bp-large) {
+            width: 40%;
+            text-align: center;
+        }
     }
 
     &--youtube {
