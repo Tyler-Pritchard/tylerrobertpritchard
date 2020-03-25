@@ -530,32 +530,58 @@ body {
   color: #c2c0c0; }
 
 .heading-primary {
-  color: #fff;
   text-transform: uppercase;
   backface-visibility: hidden;
-  margin: 4rem; }
-  .heading-primary--main {
+  margin: 4rem;
+  opacity: .7; }
+  .heading-primary--main-light {
     display: block;
     font-size: 4rem;
     font-weight: 400;
     letter-spacing: 1.8rem;
+    color: #f7f7f7;
     animation-name: moveInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    /* animation-iteration-count: 3; */
+    /* animation-delay: 3s; */ }
+    @media only screen and (max-width: 37.5em) {
+      .heading-primary--main-light {
+        letter-spacing: 1rem;
+        font-family: 5rem; } }
+  .heading-primary--main-dark {
+    display: none;
+    font-size: 4rem;
+    font-weight: 400;
+    letter-spacing: 1.8rem;
+    color: #999;
+    animation-name: moveInRight;
     animation-duration: 1s;
     animation-timing-function: ease-out;
     /* animation-iteration-count: 3; */
     /* animation-delay: 3s; */ }
     @media only screen and (max-width: 37.5em) {
-      .heading-primary--main {
+      .heading-primary--main-dark {
         letter-spacing: 1rem;
         font-family: 5rem; } }
-  .heading-primary--sub {
+  .heading-primary--sub-light {
     display: block;
     font-size: 4rem;
     font-weight: 700;
     margin: 4rem;
+    color: #000;
     animation: moveInRight 1s ease-out; }
     @media only screen and (max-width: 37.5em) {
-      .heading-primary--sub {
+      .heading-primary--sub-light {
+        letter-spacing: 2rem; } }
+  .heading-primary--sub-dark {
+    display: block;
+    font-size: 4rem;
+    font-weight: 700;
+    margin: 4rem;
+    animation: moveInLeft 1s ease-out; }
+    @media only screen and (max-width: 37.5em) {
+      .heading-primary--sub-dark {
         letter-spacing: 2rem; } }
   .heading-primary .heading-secondary {
     font-size: 3.5rem;
@@ -666,10 +692,22 @@ body {
     background-color: #fff; }
 
 .btn--dark {
-  background-color: blue;
+  background-color: #580563;
   color: #fff; }
   .btn--dark::after {
-    background-color: blue; }
+    background-color: plum; }
+
+.btn--regular {
+  background-color: #fff;
+  color: #000; }
+  .btn--regular::after {
+    background-color: #c2c0c0; }
+
+.btn--youtube {
+  background-color: #580563;
+  color: #fff; }
+  .btn--youtube::after {
+    background-color: plum; }
 
 .btn::after {
   content: "";
@@ -709,181 +747,13 @@ body {
 .btn-theme-light {
   margin: 2rem;
   display: initial;
-  color: #000; }
+  color: #000;
+  opacity: .8; }
 
 .btn-theme-dark {
   display: none;
-  margin: 2rem; }
-
-.card {
-  perspective: 150rem;
-  -moz-perspective: 150rem;
-  position: relative;
-  height: 52rem; }
-  .card__side {
-    height: 52rem;
-    transition: all .8s ease;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    border-radius: 3px;
-    overflow: hidden;
-    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
-    .card__side--front {
-      background-color: #fff; }
-    .card__side--back {
-      transform: rotateY(180deg); }
-      .card__side--back-1 {
-        background-image: linear-gradient(to right bottom, plum, #580563); }
-      .card__side--back-2 {
-        background-image: linear-gradient(to right bottom, lightblue, darkblue); }
-      .card__side--back-3 {
-        background-image: linear-gradient(to right bottom, #2998ff, #5643fa); }
-  .card:hover .card__side--front {
-    transform: rotateY(-180deg); }
-  .card:hover .card__side--back {
-    transform: rotateY(0deg); }
-  .card__picture {
-    background-size: cover;
-    height: 23rem;
-    background-blend-mode: screen;
-    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-    border-top-left-radius: 3px;
-    border-top-right-radius: 3px; }
-    .card__picture--1 {
-      background-image: linear-gradient(to right bottom, plum, #580563), url(../img/nat-5.jpg); }
-    .card__picture--2 {
-      background-image: linear-gradient(to right bottom, lightblue, darkblue), url(../img/nat-6.jpg); }
-    .card__picture--3 {
-      background-image: linear-gradient(to right bottom, #2998ff, #5643fa), url(../img/nat-7.jpg); }
-  .card__heading {
-    font-size: 2.8rem;
-    font-weight: 300;
-    text-transform: uppercase;
-    text-align: right;
-    color: #fff;
-    position: absolute;
-    top: 12rem;
-    right: 2rem;
-    width: 75%; }
-  .card__heading-span {
-    padding: 1rem 1.5rem;
-    box-decoration-break: clone;
-    -webkit-box-decoration-break: clone; }
-    .card__heading-span--1 {
-      background-image: linear-gradient(to right bottom, rgba(221, 160, 221, 0.85), rgba(88, 5, 99, 0.85)); }
-    .card__heading-span--2 {
-      background-image: linear-gradient(to right bottom, rgba(173, 216, 230, 0.85), rgba(0, 0, 139, 0.85)); }
-    .card__heading-span--3 {
-      background-image: linear-gradient(to right bottom, rgba(41, 152, 255, 0.85), rgba(86, 67, 250, 0.85)); }
-  .card__details {
-    padding: 3rem; }
-    .card__details ul {
-      list-style: none;
-      width: 80%;
-      margin: 0 auto; }
-      .card__details ul li {
-        text-align: center;
-        font-size: 1.5rem;
-        padding: 1rem; }
-        .card__details ul li:not(:last-child) {
-          border-bottom: 1px solid #eee; }
-  .card__cta {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 90%;
-    text-align: center; }
-  .card__price-box {
-    text-align: center;
-    color: #fff;
-    margin-bottom: 8rem; }
-  .card__price-only {
-    font-size: 1.4rem;
-    text-transform: uppercase; }
-  .card__price-value {
-    font-size: 6rem;
-    font-weight: 100; }
-  @media only screen and (max-width: 56.25em), only screen and (hover: none) {
-    .card {
-      height: auto;
-      border-radius: 3px;
-      background-color: #fff;
-      box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
-      .card__side {
-        height: auto;
-        position: relative;
-        box-shadow: none; }
-        .card__side--back {
-          transform: rotateY(0);
-          clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%); }
-      .card:hover .card__side--front {
-        transform: rotateY(0); }
-      .card__details {
-        padding: 1rem 3rem; }
-      .card__cta {
-        position: relative;
-        top: 0%;
-        left: 0;
-        transform: translate(0);
-        width: 100%;
-        padding: 7rem 4rem 4rem 4rem; }
-      .card__price-box {
-        margin-bottom: 3rem; }
-      .card__price-value {
-        font-size: 4rem; } }
-
-.composition {
-  position: relative; }
-  .composition__photo {
-    width: 55%;
-    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
-    border-radius: 2px;
-    position: absolute;
-    z-index: 10;
-    transition: all 0.2s;
-    outline-offset: 2rem; }
-    @media only screen and (max-width: 56.25em) {
-      .composition__photo {
-        float: left;
-        position: relative;
-        width: 33.333333%;
-        box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.2); } }
-    .composition__photo--p1 {
-      left: 0;
-      top: -2rem; }
-      @media only screen and (max-width: 56.25em) {
-        .composition__photo--p1 {
-          top: 0;
-          transform: scale(1.2); } }
-    .composition__photo--p2 {
-      right: 0;
-      top: 2rem; }
-      @media only screen and (max-width: 56.25em) {
-        .composition__photo--p2 {
-          top: -1rem;
-          transform: scale(1.3);
-          z-index: 100; } }
-    .composition__photo--p3 {
-      left: 20%;
-      top: 10rem; }
-      @media only screen and (max-width: 56.25em) {
-        .composition__photo--p3 {
-          top: 1rem;
-          left: 0;
-          transform: scale(1.1); } }
-    .composition__photo:hover {
-      outline: 1.5rem solid blue;
-      transform: scale(1.05) translateY(-0.5rem);
-      box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
-      z-index: 20; }
-  .composition:hover .composition__photo:not(:hover) {
-    transform: scale(0.95); }
+  margin: 2rem;
+  opacity: .8; }
 
 .form__group:not(:last-child) {
   margin-bottom: 2rem; }

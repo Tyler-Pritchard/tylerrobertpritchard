@@ -52,7 +52,7 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
-        overflow: auto;
+        overflow-y: scroll;
         
         @media only screen and (max-width: 600px) {
             
@@ -65,13 +65,13 @@
         border: .9rem outset $color-grey-light-2;
         flex: 25%;
         max-width: 30%;
-        overflow: hidden;
-        padding: 1rem;
+        height: 45rem;
+        padding: 2rem;
         margin: 2rem;
         box-shadow: 0 2rem 4rem rgba($color-black, .2);
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
+        justify-content: space-between;
         align-items: center;
         text-align: center;
         
@@ -100,7 +100,6 @@
     &__name {
         z-index: 3;
         border: .1rem solid black;
-     
         font-size: 1.6rem;
         text-align: center;
         padding: 1.25rem;
@@ -121,7 +120,8 @@
 
     &__text {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
+        justify-content: baseline;
         align-items: center;
         height: 40%;
         border: .2rem solid white;
@@ -131,8 +131,8 @@
         text-indent: 1rem;
         font-weight: 700;
         padding: 1rem;
-        margin: 1rem 0;
-        overflow: auto;
+        margin: 2rem 0;
+        overflow-y: scroll;
 
         -moz-hyphens: auto;
         -ms-hyphens: auto;
