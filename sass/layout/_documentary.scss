@@ -9,6 +9,7 @@
     opacity: 0;
     visibility: hidden;
     transition: all .3s;
+    overflow: hidden;
 
     @supports (-webkit-backdrop-filter: blur(10px)) or (backdrop-filter: blur(10px)) {
         -webkit-backdrop-filter: blur(10px);
@@ -28,48 +29,49 @@
         flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
-        overflow: hidden;
         opacity: 0;
         transform: translate(-50%, -50%) scale(.25);
         transition: all .5s .2s;
-
-        @media only screen and (max-width: 600px) {
+        
+        @media only screen and (max-width: $bp-large) {
             display: flex;
             flex-direction: column;
-            justify-content: space-around;
+            justify-content: space-evenly;
             align-items: center;
-
+            
         }
     }
-
-
+    
+    
     &__description {
         width: 80%;
         padding: 2rem 4rem;
         text-align: center;
-        @media only screen and (max-width: 600px) {
+        
+        @media only screen and (max-width: $bp-large) {
+            border-top: 1px solid black;
             display: flex;
             flex-direction: column;
             width: 100%;
             align-items: center;
             margin: 2rem;
+            overflow-y: scroll;
         }
     }
 
     &__video {
         display: block;
         width: 70%;
+        height: 90vh;
         border-radius: 5%;
         box-shadow: .8rem .8rem .8rem 0 black;
         margin: 2rem 0 0 2rem;
         overflow: hidden;
+        margin-top: 6rem;
 
-        @media only screen and (max-width: 600px) {
-            display: flex;
-            flex-direction: column;
-            width: 100%;
-            align-items: center;
-            width: 15rem;
+        @media only screen and (max-width: $bp-large) {
+            height: 65%;
+            margin-bottom: 4rem;
         }
     }
 
@@ -91,6 +93,10 @@
         -ms-hyphens: auto;
         -webkit-hyphens: auto;
         hyphens: auto;
+
+        @media only screen and (max-width: $bp-large) {
+            font-size: $large-font-size;
+        }
     }
 
     &:target {
@@ -116,6 +122,12 @@
             display: inline-block;
             transition: all .2s;
             line-height: 1;
+
+            @media screen and (max-width: $bp-large) {
+                font-size: 5rem;
+                top: 2rem;
+                right: 3rem;
+            }
         }
 
         &:hover {

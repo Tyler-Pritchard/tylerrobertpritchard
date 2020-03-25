@@ -28,8 +28,8 @@
     }
 
     @media only screen and (max-width: $bp-large) {
-      height: 14rem;
-      width: 14rem;
+      height: 12rem;
+      width: 12rem;
       top: 10rem;
       right: 10rem;
     }
@@ -60,8 +60,8 @@
     @media only screen and (max-width: $bp-large) {
       height: 12rem;
       width: 12rem;
-      top: 11rem;
-      right: 11rem;
+      top: 10rem;
+      right: 10rem;
     }
   }
 
@@ -113,6 +113,9 @@
         margin-right: 1.5rem;
         display: inline-block;
       }
+      @media only screen and (max-width: $bp-large) {
+        font-size: 6rem;
+      }
     }
 
     &:hover,
@@ -143,6 +146,7 @@
       height: 2px;
       background-color: $color-grey-dark-3;
       display: inline-block;
+
       @media only screen and (max-width: $bp-large) {
         width: 6rem;
         height: .5rem;
@@ -160,19 +164,19 @@
     &::before {
       top: -.8rem;
       @media only screen and (max-width: $bp-large) {
-        top: -1.6rem;
+        top: -2.5rem;
       }
     }
 
     &::after {
       top: .8rem;
       @media only screen and (max-width: $bp-large) {
-        top: 1.6rem;
+        top: 2.5rem;
       }
     }
 
     @media only screen and (max-width: $bp-large) {
-      margin-top: 7rem;
+      margin-top: 6rem;
     }
   }
 

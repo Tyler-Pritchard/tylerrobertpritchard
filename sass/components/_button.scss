@@ -74,11 +74,15 @@
     }
 
     &--youtube {
-        background-color: $color-secondary-dark;
+        background-color: $color-red;
         color: $color-white;
 
         &::after {
             background-color: $color-secondary-light;
+        }
+
+        @media only screen and (max-width: $bp-large) {
+            font-size: $default-font-size;
         }
     }
 
