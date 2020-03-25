@@ -1,8 +1,5 @@
 .header {
     height: 100vh;
-    // background-image: linear-gradient(to right bottom,
-    //         rgba($color-primary-light, 0.8),
-    //         rgba($color-primary-dark, 0.8));
     background-size: cover;
     background-position: top;
     position: relative;
@@ -13,11 +10,6 @@
         background-image: linear-gradient(to right bottom,
                 rgba($color-primary-light, 0.8),
                 rgba($color-primary-dark, 0.8));
-    }
-
-    @include respond(phone) {
-        -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
-        clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
     }
 
     &__logo-box {
@@ -36,6 +28,16 @@
         left: 50%;
         transform: translate(-50%, -50%);
         text-align: center;
+
+        @media only screen and (max-width: $bp-large) {
+            display: flex;
+            flex-direction: column;
+            justify-content: baseline;
+            align-items: center;
+            height: 70vh;
+            width: 70vw;
+            margin-top: 10rem;
+        }
     }
 
     &__heading {

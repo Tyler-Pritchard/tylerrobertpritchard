@@ -1,4 +1,5 @@
 .navigation {
+
   &__checkbox {
     display: none;
   }
@@ -25,6 +26,33 @@
       top: 3rem;
       right: 3rem;
     }
+
+    @media only screen and (max-width: $bp-large) {
+      height: 12rem;
+      width: 12rem;
+      top: 10rem;
+      right: 10rem;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+      height: 9rem;
+      width: 9rem;
+      top: 8rem;
+      right: 8rem;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      height: 8rem;
+      width: 8rem;
+      top: 4rem;
+      right: 4rem;
+    }
+    @media only screen and (max-width: $bp-smaller) {
+      height: 7rem;
+      width: 7rem;
+      top: 5rem;
+      right: 3rem;
+    }
   }
 
   &__background {
@@ -47,6 +75,33 @@
     @include respond(phone) {
       top: 3.5rem;
       right: 3.5rem;
+    }
+
+    @media only screen and (max-width: $bp-large) {
+      height: 12rem;
+      width: 12rem;
+      top: 10rem;
+      right: 10rem;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+      height: 9rem;
+      width: 9rem;
+      top: 8rem;
+      right: 8rem;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      height: 8rem;
+      width: 8rem;
+      top: 4rem;
+      right: 4rem;
+    }
+    @media only screen and (max-width: $bp-smaller) {
+      height: 7rem;
+      width: 7rem;
+      top: 5rem;
+      right: 3rem;
     }
   }
 
@@ -71,7 +126,7 @@
     text-align: center;
     width: 100%;
   }
-
+  
   &__item {
     margin: 1rem;
   }
@@ -97,6 +152,16 @@
       span {
         margin-right: 1.5rem;
         display: inline-block;
+      }
+      @media only screen and (max-width: $bp-large) {
+        font-size: 6rem;
+      }
+      @media only screen and (max-width: $bp-medium) {
+        font-size: 4rem;
+        margin: 2rem;
+      }
+      @media only screen and (max-width: $bp-small) {
+
       }
     }
 
@@ -128,6 +193,11 @@
       height: 2px;
       background-color: $color-grey-dark-3;
       display: inline-block;
+
+      @media only screen and (max-width: $bp-large) {
+        width: 6rem;
+        height: .5rem;
+      }
     }
 
     &::before,
@@ -140,12 +210,48 @@
 
     &::before {
       top: -.8rem;
+      @media only screen and (max-width: $bp-large) {
+        top: -2.5rem;
+      }
+      @media only screen and (max-width: $bp-medium) {
+        top: -2rem;
+      }
+      @media only screen and (max-width: $bp-small) {
+        top: -1.5rem;
+      }
+      @media only screen and (max-width: $bp-smaller) {
+        top: -1rem;
+      }
     }
 
     &::after {
       top: .8rem;
+      @media only screen and (max-width: $bp-large) {
+        top: 2.5rem;
+      }
+      @media only screen and (max-width: $bp-medium) {
+        top: 2rem;
+      }
+      @media only screen and (max-width: $bp-small) {
+        top: 1.5rem;
+      }
+      @media only screen and (max-width: $bp-smaller) {
+        top: 1rem;
+      }
     }
 
+    @media only screen and (max-width: $bp-large) {
+      margin-top: 6rem;
+    }
+    @media only screen and (max-width: $bp-medium) {
+      top: -1.75rem;
+    }
+    @media only screen and (max-width: $bp-small) {
+      top: -2rem;
+    }
+    @media only screen and (max-width: $bp-smaller) {
+      top: -2.75rem;
+    }
   }
 
   &__button:hover &__icon::before {
@@ -169,5 +275,4 @@
     transform: rotate(-135deg);
     top: 0;
   }
-
 }

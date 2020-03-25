@@ -4,6 +4,7 @@ body {
     font-size: 1.6rem;
     line-height: 1.5;
     color: $color-grey-dark;
+
 }
 
 .heading-primary {
@@ -12,25 +13,37 @@ body {
     margin: 4rem;
     opacity: .7;
 
-
+    @media only screen and (max-width: $bp-small) {
+        margin: 0;
+    }
+    
+    
     &--main-light {
         display: block;
         font-size: 4rem;
         font-weight: 400;
         letter-spacing: 1.8rem;
         color: $color-grey-light-1;
-
+        
         animation-name: moveInLeft;
         animation-duration: 1s;
         animation-timing-function: ease-in;
-
+        
         @include respond(phone) {
             letter-spacing: 1rem;
             font-family: 5rem;
         }
+        
+        @media only screen and (max-width: $bp-large) {
+            font-size: $larger-font-size;
+        }
 
-        /* animation-iteration-count: 3; */
-        /* animation-delay: 3s; */
+        @media only screen and (max-width: $bp-medium) {
+            font-size: $large-font-size;
+        }
+        @media only screen and (max-width: $bp-small) {
+            font-size: $large-font-size;
+        }
     }
 
     &--main-dark {
@@ -49,8 +62,15 @@ body {
             font-family: 5rem;
         }
 
-        /* animation-iteration-count: 3; */
-        /* animation-delay: 3s; */
+        @media only screen and (max-width: $bp-large) {
+            font-size: $larger-font-size;
+        }
+        @media only screen and (max-width: $bp-medium) {
+            font-size: $large-font-size;
+        }
+        @media only screen and (max-width: $bp-small) {
+            font-size: $large-font-size;
+        }
     }
 
     &--sub-light {
@@ -66,6 +86,19 @@ body {
         @include respond(phone) {
             letter-spacing: 2rem;
         }
+
+        @media only screen and (max-width: $bp-large) {
+            font-size: $larger-font-size;
+        }
+        @media only screen and (max-width: $bp-medium) {
+            font-size: $large-font-size;
+            margin: 2rem;
+        }
+        @media only screen and (max-width: $bp-small) {
+            font-size: $large-font-size;
+            margin: 2rem;
+            letter-spacing: 1rem;
+        }
     }
 
     &--sub-dark {
@@ -79,49 +112,87 @@ body {
         @include respond(phone) {
             letter-spacing: 2rem;
         }
-    }
 
-    .heading-secondary {
-        font-size: 3.5rem;
-        text-transform: uppercase;
-        font-weight: 700;
-        display: inline-block;
-        background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
-        -webkit-background-clip: text;
-        color: transparent;
-        letter-spacing: .2rem;
-        transition: all .2s;
-
-        @include respond(tab-port) {
-            font-size: 2.5rem;
+        @media only screen and (max-width: $bp-large) {
+            font-size: $larger-font-size;
         }
-
-        @include respond(phone) {
-            font-size: 2.5rem;
+        @media only screen and (max-width: $bp-medium) {
+            font-size: $large-font-size;
+            margin: 2rem;
         }
+        @media only screen and (max-width: $bp-small) {
+            font-size: $large-font-size;
+            margin: 2rem;
+            letter-spacing: 1rem;
 
-        &:hover {
-            transform: skewY(2deg) skewX(15deg) scale(1.1);
-            text-shadow: .5rem 1rem 2rem rgba($color-black, .2);
-        }
-    }
 
-    .heading-tertiary {
-        display: flex;
-        font-size: $default-font-size;
-        font-weight: 700;
-        text-transform: uppercase;
-    }
-
-    .paragraph {
-        display: flex;
-        font-size: $default-font-size;
-
-        &:not(:last-child) {
-            margin-bottom: 3rem;
         }
     }
 }
+
+.heading-secondary {
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: inline-block;
+    background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
+    -webkit-background-clip: text;
+    color: transparent;
+    letter-spacing: .2rem;
+    transition: all .2s;
+
+    @include respond(tab-port) {
+        font-size: 2.5rem;
+    }
+
+    @include respond(phone) {
+        font-size: 2.5rem;
+    }
+
+    &:hover {
+        transform: scale(1.1);
+        text-shadow: .5rem 1rem 2rem rgba($color-black, .2);
+    }
+
+    @media only screen and (max-width: $bp-large) {
+        font-size: $large-font-size;
+    }
+    @media only screen and (max-width: $bp-medium) {
+        font-size: $large-font-size;
+    }
+}
+
+.heading-tertiary {
+    display: flex;
+    font-size: $default-font-size;
+    font-weight: 500;
+    text-transform: uppercase;
+    
+    @media only screen and (max-width: $bp-large) {
+        text-transform: none;
+        font-size: 2.5rem;
+    }
+    @media only screen and (max-width: $bp-medium) {
+        font-size: 1.8rem;
+    }
+    @media only screen and (max-width: $bp-small) {
+        font-size: 1.6rem;
+    }
+    @media only screen and (max-width: $bp-smaller) {
+        padding-left: 3rem;
+        font-size: $medium-font-size;
+    }
+}
+
+.paragraph {
+    display: flex;
+    font-size: $default-font-size;
+
+    &:not(:last-child) {
+        margin-bottom: 3rem;
+    }
+}
+
 
 .heading-light {
     visibility: initial;

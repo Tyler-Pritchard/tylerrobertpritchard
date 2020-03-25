@@ -26,14 +26,13 @@
         transform: translate(-50%, -50%) scale(.25);
         transition: all .5s .2s;
         overflow-y: scroll;
-        
-        @media only screen and (max-width: 600px) {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-            align-items: center;
-            
-        }
+
+        @media screen and (max-width: $bp-small) {
+          width: 90vw;
+        } 
+        @media screen and (max-width: $bp-smaller) {
+            width: 95vw;
+          } 
     }
     
     &__heading {
@@ -44,6 +43,16 @@
         top: 0;
         text-align: center;
         z-index: 9999;
+
+        @media screen and (max-width: $bp-large) {
+            height: 7rem;
+            padding-top: 1rem;
+            font-size: $medium-font-size;
+        } 
+        @media screen and (max-width: $bp-smaller) {
+            font-size: $default-font-size;
+            padding-top: 2rem;
+        }
     }
     
     &__list {
@@ -52,11 +61,7 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
-        overflow: auto;
-        
-        @media only screen and (max-width: 600px) {
-            
-        }
+        overflow-y: scroll;
     }
     
     
@@ -65,24 +70,30 @@
         border: .9rem outset $color-grey-light-2;
         flex: 25%;
         max-width: 30%;
-        overflow: hidden;
-        padding: 1rem;
+        height: 45rem;
+        padding: 2rem;
         margin: 2rem;
         box-shadow: 0 2rem 4rem rgba($color-black, .2);
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
+        justify-content: space-between;
         align-items: center;
         text-align: center;
-        
-        @media screen and (max-width: 800px) {
-            flex: 50%;
-            max-width: 50%;
-        } 
 
-        @media screen and (max-width: 600px) {
-            flex: 100%;
-            max-width: 100%;
+        @media screen and (max-width: $bp-large) {
+            flex: 46%;
+            max-width: 46%;
+        } 
+        @media only screen and (max-width: $bp-medium) {
+            border: .5rem outset $color-grey-light-2;
+        }
+        @media only screen and (max-width: $bp-small) {
+            border: .7rem outset $color-grey-light-2;
+            max-width: 85%;
+            height: 55rem;
+        }
+        @media only screen and (max-width: $bp-smaller) {
+            max-width: 95%;
         }
     }
 
@@ -91,16 +102,11 @@
         width: 70%;
         box-shadow: .8rem .8rem .8rem 0 black;
         overflow: hidden;
-        
-        @media only screen and (max-width: 600px) {
-            width: 20rem;
-        }
     }
 
     &__name {
         z-index: 3;
         border: .1rem solid black;
-     
         font-size: 1.6rem;
         text-align: center;
         padding: 1.25rem;
@@ -117,11 +123,20 @@
             transition: all .2s;
             cursor: pointer;
         }
+
+        @media only screen and (max-width: $bp-medium) {
+            width: 25vw;
+          }
+          @media only screen and (max-width: $bp-small) {
+            width: 50vw;
+            font-size: $medium-font-size;
+          }
     }
 
     &__text {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
+        justify-content: baseline;
         align-items: center;
         height: 40%;
         border: .2rem solid white;
@@ -129,15 +144,27 @@
         color: $color-grey-dark-3;
         font-size: 1.6rem;
         text-indent: 1rem;
-        font-weight: 700;
+        font-weight: 600;
         padding: 1rem;
-        margin: 1rem 0;
-        overflow: auto;
+        margin: 2rem 0;
+        overflow-y: scroll;
 
         -moz-hyphens: auto;
         -ms-hyphens: auto;
         -webkit-hyphens: auto;
         hyphens: auto;
+
+        @media screen and (max-width: $bp-large) {
+            font-size: $medium-font-size;
+        } 
+        @media screen and (max-width: $bp-medium) {
+            font-size: $default-font-size;
+            padding-top: 1.5rem;
+        } 
+        @media screen and (max-width: $bp-small) {
+            font-size: $medium-font-size;
+            font-weight: 500;
+        } 
     }
 
     &:target {
@@ -163,6 +190,22 @@
             display: inline-block;
             transition: all .2s;
             line-height: 1;
+
+            @media screen and (max-width: $bp-large) {
+                font-size: 5rem;
+                top: .5rem;
+                right: 3rem;
+            } 
+            @media only screen and (max-width: $bp-small) {
+                top: 1rem;
+                right: 3rem;
+                font-size: 4.5rem;
+            }
+            @media only screen and (max-width: $bp-smaller) {
+                top: 1rem;
+                right: 2rem;
+                font-size: 4rem;
+            }
         }
 
         &:hover {
