@@ -118,7 +118,8 @@
             width: 25vw;
           }
           @media only screen and (max-width: $bp-small) {
-            width: 45vw;
+            width: 50vw;
+            font-size: $medium-font-size;
           }
     }
 
@@ -185,6 +186,11 @@
                 top: .5rem;
                 right: 3rem;
             } 
+            @media only screen and (max-width: $bp-small) {
+                top: 1rem;
+                right: 3rem;
+                font-size: 4.5rem;
+            }
         }
 
         &:hover {

@@ -1005,7 +1005,8 @@ body {
         width: 25vw; } }
     @media only screen and (max-width: 37.5em) {
       .projects__name {
-        width: 45vw; } }
+        width: 50vw;
+        font-size: 2rem; } }
   .projects__text {
     display: flex;
     flex-direction: column;
@@ -1059,6 +1060,11 @@ body {
           font-size: 5rem;
           top: .5rem;
           right: 3rem; } }
+      @media only screen and (max-width: 37.5em) {
+        .projects__close:link, .projects__close:visited {
+          top: 1rem;
+          right: 3rem;
+          font-size: 4.5rem; } }
     .projects__close:hover {
       color: blue; }
 
@@ -1126,6 +1132,9 @@ body {
         overflow-y: scroll;
         margin-bottom: 4rem;
         border-top: 1px solid #c2c0c0; } }
+    @media only screen and (max-width: 37.5em) {
+      .artist-bio__right {
+        width: 95%; } }
   .artist-bio__img {
     display: block;
     width: 90%;
@@ -1174,6 +1183,11 @@ body {
         top: 5rem;
         right: 5rem;
         font-size: 6rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .artist-bio__close:link, .artist-bio__close:visited {
+        top: 3rem;
+        right: 3rem;
+        font-size: 5rem; } }
   .artist-bio__close:hover {
     color: blue; }
 
@@ -1250,7 +1264,8 @@ body {
       .documentary__video {
         height: 100%;
         padding-bottom: 1rem;
-        margin-top: 4rem; } }
+        margin-top: 4rem;
+        margin-left: 0; } }
   .documentary__text {
     font-size: 1.9rem;
     margin-bottom: 4rem;
@@ -1287,6 +1302,11 @@ body {
         font-size: 5rem;
         top: 2rem;
         right: 3rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .documentary__close:link, .documentary__close:visited {
+        top: 1rem;
+        right: 3rem;
+        font-size: 4rem; } }
   .documentary__close:hover {
     color: blue; }
 
@@ -1407,6 +1427,11 @@ body {
           font-size: 5rem;
           top: 0;
           right: 3rem; } }
+      @media only screen and (max-width: 37.5em) {
+        .music__close:link, .music__close:visited {
+          top: .5rem;
+          right: 3rem;
+          font-size: 4rem; } }
     .music__close:hover {
       color: blue; }
 
