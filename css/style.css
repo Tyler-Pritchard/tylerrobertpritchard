@@ -293,7 +293,6 @@ body {
   @media only screen and (max-width: 37.5em) {
     .btn, .btn:link, .btn:visited {
       font-size: 1.6rem;
-      padding: 1rem 2.5rem;
       height: 12vh; } }
 
 .btn:hover {
@@ -1245,8 +1244,13 @@ body {
     margin-top: 6rem; }
     @media only screen and (max-width: 62.5em) {
       .documentary__video {
-        height: 65%;
+        height: 100%;
         margin-bottom: 4rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .documentary__video {
+        height: 100%;
+        padding-bottom: 1rem;
+        margin-top: 4rem; } }
   .documentary__text {
     font-size: 1.9rem;
     margin-bottom: 4rem;
@@ -1345,6 +1349,9 @@ body {
     grid-gap: 4rem;
     margin: 2rem 0 4rem 5rem;
     padding-left: 4rem; }
+    @media only screen and (max-width: 62.5em) {
+      .music__list {
+        margin: 0; } }
   .music__project {
     width: 90%;
     height: 50rem;

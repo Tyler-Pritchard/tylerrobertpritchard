@@ -70,8 +70,13 @@
         margin-top: 6rem;
 
         @media only screen and (max-width: $bp-large) {
-            height: 65%;
+            height: 100%;
             margin-bottom: 4rem;
+        }
+        @media only screen and (max-width: $bp-small) {
+            height: 100%;
+            padding-bottom: 1rem;
+            margin-top: 4rem;
         }
     }
 

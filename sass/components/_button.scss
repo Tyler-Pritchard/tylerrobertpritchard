@@ -20,7 +20,7 @@
         }
         @media only screen and (max-width: $bp-small) {
             font-size: $default-font-size;
-            padding: 1rem 2.5rem;
+       
             height: 12vh;
         }
     }
@@ -99,6 +99,9 @@
 
         @media only screen and (max-width: $bp-large) {
             font-size: $default-font-size;
+        }
+        @media only screen and (max-width: $bp-small) {
+            
         }
     }
 
