@@ -97,6 +97,9 @@
         @media only screen and (max-width: $bp-large) {
             font-size: $large-font-size;
         }
+        @media only screen and (max-width: $bp-medium) {
+            font-size: $medium-font-size;
+        }
     }
 
     &:target {

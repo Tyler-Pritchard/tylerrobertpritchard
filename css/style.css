@@ -1170,6 +1170,9 @@ body {
     @media only screen and (max-width: 62.5em) {
       .documentary__text {
         font-size: 3.2rem; } }
+    @media only screen and (max-width: 50em) {
+      .documentary__text {
+        font-size: 2rem; } }
   .documentary:target {
     opacity: 1;
     visibility: visible; }
