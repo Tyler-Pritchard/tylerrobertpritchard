@@ -42,7 +42,7 @@
         width: 33.333333%;
         display: table-cell;
         float: left;
-        
+
         @media only screen and (max-width: $bp-large) {
             width: 50%;
         }
@@ -86,14 +86,6 @@
         margin-bottom: 4rem;
         text-indent: 1rem;
         font-weight: 500;
-
-        // moz-column-count: 2;
-        // moz-column-gap: 4rem;
-        // moz-column-rule: 1px solid $color-grey-light-2;
-
-        // column-count: 3;
-        // column-gap: 4rem;
-        // column-rule: 1px solid $color-grey-light-2;
 
         -moz-hyphens: auto;
         -ms-hyphens: auto;

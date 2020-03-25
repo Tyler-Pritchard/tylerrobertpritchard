@@ -788,12 +788,6 @@ body {
     transform: translate(-50%, -50%) scale(0.25);
     transition: all .5s .2s;
     overflow-y: scroll; }
-    @media only screen and (max-width: 600px) {
-      .projects__content {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center; } }
   .projects__heading {
     background-color: #eee;
     color: black;
@@ -802,6 +796,11 @@ body {
     top: 0;
     text-align: center;
     z-index: 9999; }
+    @media screen and (max-width: 62.5em) {
+      .projects__heading {
+        height: 7rem;
+        padding-top: 1rem;
+        font-size: 2rem; } }
   .projects__list {
     border: 1px solid white;
     position: relative;
@@ -823,21 +822,14 @@ body {
     justify-content: space-between;
     align-items: center;
     text-align: center; }
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 62.5em) {
       .projects__project {
-        flex: 50%;
-        max-width: 50%; } }
-    @media screen and (max-width: 600px) {
-      .projects__project {
-        flex: 100%;
-        max-width: 100%; } }
+        flex: 46%;
+        max-width: 46%; } }
   .projects__img {
     width: 70%;
     box-shadow: .8rem .8rem .8rem 0 black;
     overflow: hidden; }
-    @media only screen and (max-width: 600px) {
-      .projects__img {
-        width: 20rem; } }
   .projects__name {
     z-index: 3;
     border: .1rem solid black;
@@ -871,6 +863,9 @@ body {
     -ms-hyphens: auto;
     -webkit-hyphens: auto;
     hyphens: auto; }
+    @media screen and (max-width: 62.5em) {
+      .projects__text {
+        font-size: 2rem; } }
   .projects:target {
     opacity: 1;
     visibility: visible; }
@@ -889,6 +884,11 @@ body {
       display: inline-block;
       transition: all .2s;
       line-height: 1; }
+      @media screen and (max-width: 62.5em) {
+        .projects__close:link, .projects__close:visited {
+          font-size: 5rem;
+          top: .5rem;
+          right: 3rem; } }
     .projects__close:hover {
       color: blue; }
 
