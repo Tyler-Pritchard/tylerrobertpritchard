@@ -1170,6 +1170,9 @@ body {
         flex-direction: column;
         justify-content: space-around;
         align-items: center; } }
+    @media only screen and (max-width: 26em) {
+      .artist-bio__content {
+        width: 90vw; } }
   .artist-bio__left {
     width: 33.333333%;
     display: table-cell;
@@ -1180,6 +1183,9 @@ body {
     @media only screen and (max-width: 50em) {
       .artist-bio__left {
         width: 30%; } }
+    @media only screen and (max-width: 50em) {
+      .artist-bio__left {
+        width: 40%; } }
   .artist-bio__right {
     float: right;
     width: 66.666667%;
@@ -1211,6 +1217,10 @@ body {
       .artist-bio__img {
         margin-top: 4rem;
         margin-bottom: 4rem; } }
+    @media only screen and (max-width: 26em) {
+      .artist-bio__img {
+        margin-top: 2rem;
+        margin-bottom: 2rem; } }
   .artist-bio__text {
     font-size: 1.6rem;
     margin-bottom: 4rem;
@@ -1227,6 +1237,10 @@ body {
       .artist-bio__text {
         font-size: 2rem;
         width: 95%; } }
+    @media only screen and (max-width: 26em) {
+      .artist-bio__text {
+        font-size: 2rem;
+        width: 80vw; } }
   .artist-bio:target {
     opacity: 1;
     visibility: visible; }
@@ -1253,6 +1267,11 @@ body {
         top: 3rem;
         right: 3rem;
         font-size: 5rem; } }
+    @media only screen and (max-width: 26em) {
+      .artist-bio__close:link, .artist-bio__close:visited {
+        top: 2rem;
+        right: 2rem;
+        font-size: 4rem; } }
   .artist-bio__close:hover {
     color: blue; }
 
