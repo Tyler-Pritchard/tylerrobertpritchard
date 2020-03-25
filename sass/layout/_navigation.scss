@@ -33,6 +33,13 @@
       top: 10rem;
       right: 10rem;
     }
+
+    @media only screen and (max-width: $bp-medium) {
+      height: 9rem;
+      width: 9rem;
+      top: 8rem;
+      right: 8rem;
+    }
   }
 
   &__background {
@@ -62,6 +69,13 @@
       width: 12rem;
       top: 10rem;
       right: 10rem;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+      height: 9rem;
+      width: 9rem;
+      top: 8rem;
+      right: 8rem;
     }
   }
 
@@ -166,6 +180,9 @@
       @media only screen and (max-width: $bp-large) {
         top: -2.5rem;
       }
+      @media only screen and (max-width: $bp-medium) {
+        top: -2rem;
+      }
     }
 
     &::after {
@@ -173,10 +190,16 @@
       @media only screen and (max-width: $bp-large) {
         top: 2.5rem;
       }
+      @media only screen and (max-width: $bp-medium) {
+        top: 2rem;
+      }
     }
 
     @media only screen and (max-width: $bp-large) {
       margin-top: 6rem;
+    }
+    @media only screen and (max-width: $bp-medium) {
+      top: -1.75rem;
     }
   }
 

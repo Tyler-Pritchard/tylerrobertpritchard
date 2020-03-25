@@ -105,6 +105,9 @@ body {
     @media only screen and (max-width: 62.5em) {
       .heading-primary--main-light {
         font-size: 6.4rem; } }
+    @media only screen and (max-width: 50em) {
+      .heading-primary--main-light {
+        font-size: 3.2rem; } }
   .heading-primary--main-dark {
     display: none;
     font-size: 4rem;
@@ -121,6 +124,9 @@ body {
     @media only screen and (max-width: 62.5em) {
       .heading-primary--main-dark {
         font-size: 6.4rem; } }
+    @media only screen and (max-width: 50em) {
+      .heading-primary--main-dark {
+        font-size: 3.2rem; } }
   .heading-primary--sub-light {
     display: block;
     font-size: 4rem;
@@ -134,6 +140,10 @@ body {
     @media only screen and (max-width: 62.5em) {
       .heading-primary--sub-light {
         font-size: 6.4rem; } }
+    @media only screen and (max-width: 50em) {
+      .heading-primary--sub-light {
+        font-size: 3.2rem;
+        margin: 2rem; } }
   .heading-primary--sub-dark {
     display: block;
     font-size: 4rem;
@@ -146,6 +156,10 @@ body {
     @media only screen and (max-width: 62.5em) {
       .heading-primary--sub-dark {
         font-size: 6.4rem; } }
+    @media only screen and (max-width: 50em) {
+      .heading-primary--sub-dark {
+        font-size: 3.2rem;
+        margin: 2rem; } }
 
 .heading-secondary {
   font-size: 3.5rem;
@@ -336,11 +350,19 @@ body {
   color: #000;
   opacity: .8;
   font-size: 3.2rem; }
+  @media only screen and (max-width: 50em) {
+    .btn-theme-light {
+      font-size: 2rem;
+      height: 8vh; } }
 
 .btn-theme-dark {
   display: none;
   margin: 2rem;
   opacity: .8; }
+  @media only screen and (max-width: 50em) {
+    .btn-theme-dark {
+      font-size: 2rem;
+      height: 8vh; } }
 
 .form__group:not(:last-child) {
   margin-bottom: 2rem; }
@@ -531,6 +553,12 @@ body {
       width: 12rem;
       top: 10rem;
       right: 10rem; } }
+  @media only screen and (max-width: 50em) {
+    .navigation__button {
+      height: 9rem;
+      width: 9rem;
+      top: 8rem;
+      right: 8rem; } }
 
 .navigation__background {
   height: 6rem;
@@ -556,6 +584,12 @@ body {
       width: 12rem;
       top: 10rem;
       right: 10rem; } }
+  @media only screen and (max-width: 50em) {
+    .navigation__background {
+      height: 9rem;
+      width: 9rem;
+      top: 8rem;
+      right: 8rem; } }
 
 .navigation__nav {
   height: 100vh;
@@ -631,14 +665,23 @@ body {
     @media only screen and (max-width: 62.5em) {
       .navigation__icon::before {
         top: -2.5rem; } }
+    @media only screen and (max-width: 50em) {
+      .navigation__icon::before {
+        top: -2rem; } }
   .navigation__icon::after {
     top: .8rem; }
     @media only screen and (max-width: 62.5em) {
       .navigation__icon::after {
         top: 2.5rem; } }
+    @media only screen and (max-width: 50em) {
+      .navigation__icon::after {
+        top: 2rem; } }
   @media only screen and (max-width: 62.5em) {
     .navigation__icon {
       margin-top: 6rem; } }
+  @media only screen and (max-width: 50em) {
+    .navigation__icon {
+      top: -1.75rem; } }
 
 .navigation__button:hover .navigation__icon::before {
   top: -1rem; }

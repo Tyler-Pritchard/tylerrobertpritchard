@@ -33,6 +33,10 @@ body {
         @media only screen and (max-width: $bp-large) {
             font-size: $larger-font-size;
         }
+
+        @media only screen and (max-width: $bp-medium) {
+            font-size: $large-font-size;
+        }
     }
 
     &--main-dark {
@@ -54,6 +58,9 @@ body {
         @media only screen and (max-width: $bp-large) {
             font-size: $larger-font-size;
         }
+        @media only screen and (max-width: $bp-medium) {
+            font-size: $large-font-size;
+        }
     }
 
     &--sub-light {
@@ -73,6 +80,10 @@ body {
         @media only screen and (max-width: $bp-large) {
             font-size: $larger-font-size;
         }
+        @media only screen and (max-width: $bp-medium) {
+            font-size: $large-font-size;
+            margin: 2rem;
+        }
     }
 
     &--sub-dark {
@@ -90,6 +101,11 @@ body {
         @media only screen and (max-width: $bp-large) {
             font-size: $larger-font-size;
         }
+        @media only screen and (max-width: $bp-medium) {
+            font-size: $large-font-size;
+            margin: 2rem;
+        }
+
     }
 }
 
