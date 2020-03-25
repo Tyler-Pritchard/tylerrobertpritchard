@@ -77,6 +77,9 @@
             flex: 46%;
             max-width: 46%;
         } 
+        @media only screen and (max-width: $bp-medium) {
+            border: .5rem outset $color-grey-light-2;
+        }
         
     }
 
@@ -106,6 +109,10 @@
             transition: all .2s;
             cursor: pointer;
         }
+
+        @media only screen and (max-width: $bp-medium) {
+            width: 25vw;
+          }
     }
 
     &__text {
@@ -132,6 +139,11 @@
         @media screen and (max-width: $bp-large) {
             font-size: $medium-font-size;
         } 
+        @media screen and (max-width: $bp-medium) {
+            font-size: $default-font-size;
+            padding-top: 1.5rem;
+        } 
+        
     }
 
     &:target {

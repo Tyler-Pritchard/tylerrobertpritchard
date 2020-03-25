@@ -898,6 +898,9 @@ body {
       .projects__project {
         flex: 46%;
         max-width: 46%; } }
+    @media only screen and (max-width: 50em) {
+      .projects__project {
+        border: 0.5rem outset #eee; } }
   .projects__img {
     width: 70%;
     box-shadow: .8rem .8rem .8rem 0 black;
@@ -916,6 +919,9 @@ body {
       transform: translate(0, -10%);
       transition: all .2s;
       cursor: pointer; }
+    @media only screen and (max-width: 50em) {
+      .projects__name {
+        width: 25vw; } }
   .projects__text {
     display: flex;
     flex-direction: column;
@@ -938,6 +944,10 @@ body {
     @media screen and (max-width: 62.5em) {
       .projects__text {
         font-size: 2rem; } }
+    @media screen and (max-width: 50em) {
+      .projects__text {
+        font-size: 1.6rem;
+        padding-top: 1.5rem; } }
   .projects:target {
     opacity: 1;
     visibility: visible; }
