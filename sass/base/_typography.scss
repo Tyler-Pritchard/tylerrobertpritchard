@@ -155,7 +155,7 @@ body {
     }
 
     @media only screen and (max-width: $bp-large) {
-        font-size: $larger-font-size;
+        font-size: $large-font-size;
     }
     @media only screen and (max-width: $bp-medium) {
         font-size: $large-font-size;
@@ -180,6 +180,7 @@ body {
     }
     @media only screen and (max-width: $bp-smaller) {
         padding-left: 3rem;
+        font-size: $medium-font-size;
     }
 }
 
