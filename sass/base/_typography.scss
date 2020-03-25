@@ -136,6 +136,9 @@ body {
     @media only screen and (max-width: $bp-large) {
         font-size: $larger-font-size;
     }
+    @media only screen and (max-width: $bp-medium) {
+        font-size: $large-font-size;
+    }
 }
 
 .heading-tertiary {
@@ -143,9 +146,13 @@ body {
     font-size: $default-font-size;
     font-weight: 500;
     text-transform: uppercase;
-
+    
     @media only screen and (max-width: $bp-large) {
+        text-transform: none;
         font-size: 2.5rem;
+    }
+    @media only screen and (max-width: $bp-medium) {
+        font-size: 1.8rem;
     }
 }
 

@@ -183,6 +183,9 @@ body {
   @media only screen and (max-width: 62.5em) {
     .heading-secondary {
       font-size: 6.4rem; } }
+  @media only screen and (max-width: 50em) {
+    .heading-secondary {
+      font-size: 3.2rem; } }
 
 .heading-tertiary {
   display: flex;
@@ -191,7 +194,11 @@ body {
   text-transform: uppercase; }
   @media only screen and (max-width: 62.5em) {
     .heading-tertiary {
+      text-transform: none;
       font-size: 2.5rem; } }
+  @media only screen and (max-width: 50em) {
+    .heading-tertiary {
+      font-size: 1.8rem; } }
 
 .paragraph {
   display: flex;
@@ -258,6 +265,9 @@ body {
   font-size: 3.2rem;
   border: none;
   cursor: pointer; }
+  @media only screen and (max-width: 50em) {
+    .btn, .btn:link, .btn:visited {
+      font-size: 1.6rem; } }
 
 .btn:hover {
   transform: translateY(-3px);
@@ -298,6 +308,9 @@ body {
     .btn--regular {
       width: 40%;
       text-align: center; } }
+  @media only screen and (max-width: 50em) {
+    .btn--regular {
+      height: 8rem; } }
 
 .btn--youtube {
   background-color: #ED3833;
@@ -630,6 +643,10 @@ body {
   @media only screen and (max-width: 62.5em) {
     .navigation__link:link, .navigation__link:visited {
       font-size: 6rem; } }
+  @media only screen and (max-width: 50em) {
+    .navigation__link:link, .navigation__link:visited {
+      font-size: 4rem;
+      margin: 2rem; } }
 
 .navigation__link:hover, .navigation__link:active {
   background-position: 100%;
@@ -773,6 +790,9 @@ body {
       .about__img {
         margin-top: 4rem;
         margin-bottom: 4rem; } }
+    @media only screen and (max-width: 50em) {
+      .about__img {
+        width: 30%; } }
   .about__text {
     font-size: 1.8rem;
     margin-bottom: 4rem;
@@ -785,6 +805,9 @@ body {
     @media only screen and (max-width: 62.5em) {
       .about__text {
         font-size: 3.2rem; } }
+    @media only screen and (max-width: 50em) {
+      .about__text {
+        font-size: 1.2rem; } }
   .about:target {
     opacity: 1;
     visibility: visible; }
@@ -985,6 +1008,9 @@ body {
     @media only screen and (max-width: 62.5em) {
       .artist-bio__left {
         width: 50%; } }
+    @media only screen and (max-width: 50em) {
+      .artist-bio__left {
+        width: 30%; } }
   .artist-bio__right {
     float: right;
     width: 66.666667%;
@@ -1000,7 +1026,8 @@ body {
         justify-content: space-between;
         align-items: center;
         overflow-y: scroll;
-        margin-bottom: 4rem; } }
+        margin-bottom: 4rem;
+        border-top: 1px solid #c2c0c0; } }
   .artist-bio__img {
     display: block;
     width: 90%;
@@ -1024,6 +1051,10 @@ body {
     @media only screen and (max-width: 62.5em) {
       .artist-bio__text {
         font-size: 3.2rem; } }
+    @media only screen and (max-width: 50em) {
+      .artist-bio__text {
+        font-size: 2rem;
+        width: 95%; } }
   .artist-bio:target {
     opacity: 1;
     visibility: visible; }

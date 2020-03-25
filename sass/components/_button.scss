@@ -14,6 +14,10 @@
 
         border: none;
         cursor: pointer;
+
+        @media only screen and (max-width: $bp-medium) {
+            font-size: $default-font-size;
+        }
     }
 
     &:hover {
@@ -70,6 +74,10 @@
         @media only screen and (max-width: $bp-large) {
             width: 40%;
             text-align: center;
+        }
+
+        @media only screen and (max-width: $bp-medium) {
+            height: 8rem;
         }
     }
 

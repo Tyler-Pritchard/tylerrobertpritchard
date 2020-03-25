@@ -81,6 +81,9 @@
             margin-top: 4rem;
             margin-bottom: 4rem;
         }
+        @media only screen and (max-width: $bp-medium) {
+            width: 30%;
+        }
     }
 
     &__text {
@@ -96,6 +99,9 @@
 
         @media only screen and (max-width: $bp-large) {
             font-size: $large-font-size;
+        }
+        @media only screen and (max-width: $bp-medium) {
+            font-size: $small-font-size;
         }
     }
 
