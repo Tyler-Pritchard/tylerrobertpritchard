@@ -38,6 +38,9 @@
             justify-content: space-around;
             align-items: center;
         }
+        @media only screen and (max-width: $bp-large) {
+            margin: 0;
+        }
     }
 
     &__left {
@@ -67,6 +70,10 @@
             overflow-y: scroll;
             margin-bottom: 4rem;
         }
+        @media only screen and (max-width: $bp-small) {
+            width: 80vw;
+
+        }
     }
 
     &__img {
@@ -83,6 +90,10 @@
         }
         @media only screen and (max-width: $bp-medium) {
             width: 30%;
+        }
+        @media only screen and (max-width: $bp-small) {
+            width: 65%;
+            margin-left: 4rem;
         }
     }
 
@@ -102,6 +113,10 @@
         }
         @media only screen and (max-width: $bp-medium) {
             font-size: $small-font-size;
+        }
+        @media only screen and (max-width: $bp-small) {
+            font-size: $default-font-size;
+            width: 95%;
         }
     }
 
@@ -133,6 +148,11 @@
                 top: 5rem;
                 right: 5rem;
                 font-size: 6rem;
+            }
+            @media only screen and (max-width: $bp-small) {
+                top: 2rem;
+                right: 3rem;
+                font-size: 5rem;
             }
         }
 

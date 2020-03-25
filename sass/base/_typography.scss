@@ -175,6 +175,9 @@ body {
     @media only screen and (max-width: $bp-medium) {
         font-size: 1.8rem;
     }
+    @media only screen and (max-width: $bp-small) {
+        font-size: 1.6rem;
+    }
 }
 
 .paragraph {

@@ -18,6 +18,11 @@
         @media only screen and (max-width: $bp-medium) {
             font-size: $default-font-size;
         }
+        @media only screen and (max-width: $bp-small) {
+            font-size: $default-font-size;
+            padding: 1rem 2.5rem;
+            height: 12vh;
+        }
     }
 
     &:hover {
@@ -78,6 +83,9 @@
 
         @media only screen and (max-width: $bp-medium) {
             height: 8rem;
+        }
+        @media only screen and (max-width: $bp-small) {
+            height: 6rem;
         }
     }
 

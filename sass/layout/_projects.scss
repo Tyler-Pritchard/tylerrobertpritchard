@@ -27,8 +27,8 @@
         transition: all .5s .2s;
         overflow-y: scroll;
 
-        @media screen and (max-width: $bp-large) {
-          
+        @media screen and (max-width: $bp-small) {
+          width: 90vw;
         } 
     }
     
@@ -80,7 +80,11 @@
         @media only screen and (max-width: $bp-medium) {
             border: .5rem outset $color-grey-light-2;
         }
-        
+        @media only screen and (max-width: $bp-small) {
+            border: .7rem outset $color-grey-light-2;
+            max-width: 85%;
+            height: 55rem;
+        }
     }
 
 
@@ -113,6 +117,9 @@
         @media only screen and (max-width: $bp-medium) {
             width: 25vw;
           }
+          @media only screen and (max-width: $bp-small) {
+            width: 45vw;
+          }
     }
 
     &__text {
@@ -126,7 +133,7 @@
         color: $color-grey-dark-3;
         font-size: 1.6rem;
         text-indent: 1rem;
-        font-weight: 700;
+        font-weight: 600;
         padding: 1rem;
         margin: 2rem 0;
         overflow-y: scroll;
@@ -143,7 +150,10 @@
             font-size: $default-font-size;
             padding-top: 1.5rem;
         } 
-        
+        @media screen and (max-width: $bp-small) {
+            font-size: $medium-font-size;
+            font-weight: 500;
+        } 
     }
 
     &:target {
