@@ -20,8 +20,10 @@
         }
         @media only screen and (max-width: $bp-small) {
             font-size: $default-font-size;
-       
             height: 12vh;
+        }
+        @media only screen and (max-width: $bp-smaller) {
+            font-size: $medium-font-size;
         }
     }
 
@@ -86,6 +88,9 @@
         }
         @media only screen and (max-width: $bp-small) {
             height: 6rem;
+        }
+        @media only screen and (max-width: $bp-smaller) {
+            width: 60vw;
         }
     }
 
@@ -162,9 +167,12 @@
         font-size: $medium-font-size;
         height: 8vh;
     }
-    @media only screen and (max-width: $bp-medium) {
+    @media only screen and (max-width: $bp-small) {
         width: 40%;
         font-size: $medium-font-size;
+    }
+    @media only screen and (max-width: $bp-smaller) {
+        width: 60%;
     }
 }
 
@@ -177,8 +185,11 @@
         font-size: $medium-font-size;
         height: 8vh;
     }
-    @media only screen and (max-width: $bp-medium) {
+    @media only screen and (max-width: $bp-small) {
         width: 40%;
         font-size: $medium-font-size;
+    }
+    @media only screen and (max-width: $bp-smaller) {
+        width: 60%;
     }
 }

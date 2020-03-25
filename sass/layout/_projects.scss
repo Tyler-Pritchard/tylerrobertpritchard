@@ -30,6 +30,9 @@
         @media screen and (max-width: $bp-small) {
           width: 90vw;
         } 
+        @media screen and (max-width: $bp-smaller) {
+            width: 95vw;
+          } 
     }
     
     &__heading {
@@ -46,6 +49,10 @@
             padding-top: 1rem;
             font-size: $medium-font-size;
         } 
+        @media screen and (max-width: $bp-smaller) {
+            font-size: $default-font-size;
+            padding-top: 2rem;
+        }
     }
     
     &__list {
@@ -84,6 +91,9 @@
             border: .7rem outset $color-grey-light-2;
             max-width: 85%;
             height: 55rem;
+        }
+        @media only screen and (max-width: $bp-smaller) {
+            max-width: 95%;
         }
     }
 
@@ -190,6 +200,11 @@
                 top: 1rem;
                 right: 3rem;
                 font-size: 4.5rem;
+            }
+            @media only screen and (max-width: $bp-smaller) {
+                top: 1rem;
+                right: 2rem;
+                font-size: 4rem;
             }
         }
 

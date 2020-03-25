@@ -47,6 +47,12 @@
       top: 4rem;
       right: 4rem;
     }
+    @media only screen and (max-width: $bp-smaller) {
+      height: 7rem;
+      width: 7rem;
+      top: 5rem;
+      right: 3rem;
+    }
   }
 
   &__background {
@@ -90,6 +96,12 @@
       width: 8rem;
       top: 4rem;
       right: 4rem;
+    }
+    @media only screen and (max-width: $bp-smaller) {
+      height: 7rem;
+      width: 7rem;
+      top: 5rem;
+      right: 3rem;
     }
   }
 
@@ -207,6 +219,9 @@
       @media only screen and (max-width: $bp-small) {
         top: -1.5rem;
       }
+      @media only screen and (max-width: $bp-smaller) {
+        top: -1rem;
+      }
     }
 
     &::after {
@@ -220,6 +235,9 @@
       @media only screen and (max-width: $bp-small) {
         top: 1.5rem;
       }
+      @media only screen and (max-width: $bp-smaller) {
+        top: 1rem;
+      }
     }
 
     @media only screen and (max-width: $bp-large) {
@@ -230,6 +248,9 @@
     }
     @media only screen and (max-width: $bp-small) {
       top: -2rem;
+    }
+    @media only screen and (max-width: $bp-smaller) {
+      top: -2.75rem;
     }
   }
 

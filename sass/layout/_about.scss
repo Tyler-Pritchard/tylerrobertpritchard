@@ -41,6 +41,10 @@
         @media only screen and (max-width: $bp-large) {
             margin: 0;
         }
+        @media only screen and (max-width: $bp-smaller) {
+            width: 95vw;
+            height: 95vh;
+        }
     }
 
     &__left {
@@ -50,6 +54,7 @@
 
         @media only screen and (max-width: $bp-large) {
             width: 50%;
+            float: none;
         }
     }
 
@@ -69,10 +74,14 @@
             align-items: center;
             overflow-y: scroll;
             margin-bottom: 4rem;
+            float: none;
         }
         @media only screen and (max-width: $bp-small) {
             width: 80vw;
-
+        }
+        @media only screen and (max-width: $bp-smaller) {
+            width: 98vw;
+            padding: 1.5rem;
         }
     }
 
@@ -117,6 +126,10 @@
         @media only screen and (max-width: $bp-small) {
             font-size: $default-font-size;
             width: 95%;
+        }
+        @media only screen and (max-width: $bp-smaller) {
+            font-weight: 400;
+            font-size: $medium-font-size;
         }
     }
 
