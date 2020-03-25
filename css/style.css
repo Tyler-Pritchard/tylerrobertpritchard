@@ -683,8 +683,9 @@ body {
     margin: 8rem 0 10rem 0;
     transform: translate(-50%, -50%) scale(0.25);
     transition: all .5s .2s; }
-    @media only screen and (max-width: 727px) {
+    @media only screen and (max-width: 62.5em) {
       .about__content {
+        height: 90vh;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -693,25 +694,25 @@ body {
     width: 33.333333%;
     display: table-cell;
     float: left; }
-    @media only screen and (max-width: 727px) {
+    @media only screen and (max-width: 62.5em) {
       .about__left {
-        display: flex;
-        flex-direction: column;
-        width: 50%;
-        align-items: center; } }
+        width: 50%; } }
   .about__right {
     float: right;
     width: 66.666667%;
     display: table-cell;
     vertical-align: middle;
     padding: 2rem 4rem; }
-    @media only screen and (max-width: 727px) {
+    @media only screen and (max-width: 62.5em) {
       .about__right {
+        width: 80%;
+        height: 70%;
         display: flex;
         flex-direction: column;
-        width: 100%;
+        justify-content: space-between;
         align-items: center;
-        margin: 2rem; } }
+        overflow-y: scroll;
+        margin-bottom: 4rem; } }
   .about__img {
     display: block;
     width: 80%;
@@ -719,9 +720,10 @@ body {
     box-shadow: .8rem .8rem .8rem 0 black;
     margin: 2rem 0 0 2rem;
     overflow: hidden; }
-    @media only screen and (max-width: 727px) {
+    @media only screen and (max-width: 62.5em) {
       .about__img {
-        width: 15rem; } }
+        margin-top: 4rem;
+        margin-bottom: 4rem; } }
   .about__text {
     font-size: 1.8rem;
     margin-bottom: 4rem;
@@ -731,6 +733,9 @@ body {
     -ms-hyphens: auto;
     -webkit-hyphens: auto;
     hyphens: auto; }
+    @media only screen and (max-width: 62.5em) {
+      .about__text {
+        font-size: 3.2rem; } }
   .about:target {
     opacity: 1;
     visibility: visible; }
@@ -747,6 +752,11 @@ body {
     display: inline-block;
     transition: all .2s;
     line-height: 1; }
+    @media only screen and (max-width: 62.5em) {
+      .about__close:link, .about__close:visited {
+        top: 5rem;
+        right: 5rem;
+        font-size: 6rem; } }
   .about__close:hover {
     color: blue; }
 
