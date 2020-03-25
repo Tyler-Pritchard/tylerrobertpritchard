@@ -40,6 +40,13 @@
       top: 8rem;
       right: 8rem;
     }
+
+    @media only screen and (max-width: $bp-small) {
+      height: 8rem;
+      width: 8rem;
+      top: 4rem;
+      right: 4rem;
+    }
   }
 
   &__background {
@@ -76,6 +83,13 @@
       width: 9rem;
       top: 8rem;
       right: 8rem;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      height: 8rem;
+      width: 8rem;
+      top: 4rem;
+      right: 4rem;
     }
   }
 
@@ -134,6 +148,9 @@
         font-size: 4rem;
         margin: 2rem;
       }
+      @media only screen and (max-width: $bp-small) {
+
+      }
     }
 
     &:hover,
@@ -187,6 +204,9 @@
       @media only screen and (max-width: $bp-medium) {
         top: -2rem;
       }
+      @media only screen and (max-width: $bp-small) {
+        top: -1.5rem;
+      }
     }
 
     &::after {
@@ -197,6 +217,9 @@
       @media only screen and (max-width: $bp-medium) {
         top: 2rem;
       }
+      @media only screen and (max-width: $bp-small) {
+        top: 1.5rem;
+      }
     }
 
     @media only screen and (max-width: $bp-large) {
@@ -204,6 +227,9 @@
     }
     @media only screen and (max-width: $bp-medium) {
       top: -1.75rem;
+    }
+    @media only screen and (max-width: $bp-small) {
+      top: -2rem;
     }
   }
 

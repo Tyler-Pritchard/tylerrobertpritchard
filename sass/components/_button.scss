@@ -151,6 +151,10 @@
         font-size: $medium-font-size;
         height: 8vh;
     }
+    @media only screen and (max-width: $bp-medium) {
+        width: 40%;
+        font-size: $medium-font-size;
+    }
 }
 
 .btn-theme-dark {
@@ -161,5 +165,9 @@
     @media only screen and (max-width: $bp-medium) {
         font-size: $medium-font-size;
         height: 8vh;
+    }
+    @media only screen and (max-width: $bp-medium) {
+        width: 40%;
+        font-size: $medium-font-size;
     }
 }

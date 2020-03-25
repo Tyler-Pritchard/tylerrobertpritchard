@@ -12,6 +12,10 @@ body {
     backface-visibility: hidden;
     margin: 4rem;
     opacity: .7;
+
+    @media only screen and (max-width: $bp-small) {
+        margin: 0;
+    }
     
     
     &--main-light {
@@ -35,6 +39,9 @@ body {
         }
 
         @media only screen and (max-width: $bp-medium) {
+            font-size: $large-font-size;
+        }
+        @media only screen and (max-width: $bp-small) {
             font-size: $large-font-size;
         }
     }
@@ -61,6 +68,9 @@ body {
         @media only screen and (max-width: $bp-medium) {
             font-size: $large-font-size;
         }
+        @media only screen and (max-width: $bp-small) {
+            font-size: $large-font-size;
+        }
     }
 
     &--sub-light {
@@ -84,6 +94,11 @@ body {
             font-size: $large-font-size;
             margin: 2rem;
         }
+        @media only screen and (max-width: $bp-small) {
+            font-size: $large-font-size;
+            margin: 2rem;
+            letter-spacing: 1rem;
+        }
     }
 
     &--sub-dark {
@@ -105,7 +120,13 @@ body {
             font-size: $large-font-size;
             margin: 2rem;
         }
+        @media only screen and (max-width: $bp-small) {
+            font-size: $large-font-size;
+            margin: 2rem;
+            letter-spacing: 1rem;
 
+
+        }
     }
 }
 

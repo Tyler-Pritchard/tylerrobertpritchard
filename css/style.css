@@ -89,6 +89,9 @@ body {
   backface-visibility: hidden;
   margin: 4rem;
   opacity: .7; }
+  @media only screen and (max-width: 37.5em) {
+    .heading-primary {
+      margin: 0; } }
   .heading-primary--main-light {
     display: block;
     font-size: 4rem;
@@ -106,6 +109,9 @@ body {
       .heading-primary--main-light {
         font-size: 6.4rem; } }
     @media only screen and (max-width: 50em) {
+      .heading-primary--main-light {
+        font-size: 3.2rem; } }
+    @media only screen and (max-width: 37.5em) {
       .heading-primary--main-light {
         font-size: 3.2rem; } }
   .heading-primary--main-dark {
@@ -127,6 +133,9 @@ body {
     @media only screen and (max-width: 50em) {
       .heading-primary--main-dark {
         font-size: 3.2rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .heading-primary--main-dark {
+        font-size: 3.2rem; } }
   .heading-primary--sub-light {
     display: block;
     font-size: 4rem;
@@ -144,6 +153,11 @@ body {
       .heading-primary--sub-light {
         font-size: 3.2rem;
         margin: 2rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .heading-primary--sub-light {
+        font-size: 3.2rem;
+        margin: 2rem;
+        letter-spacing: 1rem; } }
   .heading-primary--sub-dark {
     display: block;
     font-size: 4rem;
@@ -160,6 +174,11 @@ body {
       .heading-primary--sub-dark {
         font-size: 3.2rem;
         margin: 2rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .heading-primary--sub-dark {
+        font-size: 3.2rem;
+        margin: 2rem;
+        letter-spacing: 1rem; } }
 
 .heading-secondary {
   font-size: 3.5rem;
@@ -367,6 +386,10 @@ body {
     .btn-theme-light {
       font-size: 2rem;
       height: 8vh; } }
+  @media only screen and (max-width: 50em) {
+    .btn-theme-light {
+      width: 40%;
+      font-size: 2rem; } }
 
 .btn-theme-dark {
   display: none;
@@ -376,6 +399,10 @@ body {
     .btn-theme-dark {
       font-size: 2rem;
       height: 8vh; } }
+  @media only screen and (max-width: 50em) {
+    .btn-theme-dark {
+      width: 40%;
+      font-size: 2rem; } }
 
 .form__group:not(:last-child) {
   margin-bottom: 2rem; }
@@ -506,10 +533,6 @@ body {
   @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), only screen and (min-width: 125em) {
     .header {
       background-image: linear-gradient(to right bottom, rgba(173, 216, 230, 0.8), rgba(0, 0, 139, 0.8)); } }
-  @media only screen and (max-width: 37.5em) {
-    .header {
-      -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
-      clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%); } }
   .header__logo-box {
     position: fixed;
     top: 4rem;
@@ -572,6 +595,12 @@ body {
       width: 9rem;
       top: 8rem;
       right: 8rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .navigation__button {
+      height: 8rem;
+      width: 8rem;
+      top: 4rem;
+      right: 4rem; } }
 
 .navigation__background {
   height: 6rem;
@@ -603,6 +632,12 @@ body {
       width: 9rem;
       top: 8rem;
       right: 8rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .navigation__background {
+      height: 8rem;
+      width: 8rem;
+      top: 4rem;
+      right: 4rem; } }
 
 .navigation__nav {
   height: 100vh;
@@ -685,6 +720,9 @@ body {
     @media only screen and (max-width: 50em) {
       .navigation__icon::before {
         top: -2rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .navigation__icon::before {
+        top: -1.5rem; } }
   .navigation__icon::after {
     top: .8rem; }
     @media only screen and (max-width: 62.5em) {
@@ -693,12 +731,18 @@ body {
     @media only screen and (max-width: 50em) {
       .navigation__icon::after {
         top: 2rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .navigation__icon::after {
+        top: 1.5rem; } }
   @media only screen and (max-width: 62.5em) {
     .navigation__icon {
       margin-top: 6rem; } }
   @media only screen and (max-width: 50em) {
     .navigation__icon {
       top: -1.75rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .navigation__icon {
+      top: -2rem; } }
 
 .navigation__button:hover .navigation__icon::before {
   top: -1rem; }
